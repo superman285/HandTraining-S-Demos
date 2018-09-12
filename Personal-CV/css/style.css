@@ -1,0 +1,165 @@
+
+
+/*header部分*/
+
+header {
+    background: #fff;
+    box-shadow: 0px 1px 6px silver;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+nav.topNav {
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.topNav a:first-child {
+    margin-right:auto;
+}
+.topNav a:not(:first-child) {
+    margin-left: 40px;
+}
+
+.topNav a {
+    position: relative;
+}
+.topNav a:not(:first-of-type):hover::before {
+    content: '—';
+    position: absolute;
+    right: 106%;
+    color: #17bed2;
+}
+
+.target-fix {
+    height: 100px;
+}
+
+.topBanner {
+    height: 580px;
+    background: url("../img/1920x1080/01.jpg");
+    background-size: cover;
+    overflow: hidden;
+}
+.myInfo>* {
+    color: white;
+}
+.myInfo h1:first-child {
+    margin-top: 160px;
+}
+.myInfo > *:not(:first-child) {
+    margin-top: 20px;
+}
+.myInfo h1:nth-child(2) {
+    margin-top: 0;
+}
+.myInfo h2 {
+    font-weight: 200;
+}
+.myInfo hr {
+    width: 500px;
+    margin-left: 0;
+}
+.myInfo i {
+    font-size: 24px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+/*主体部分*/
+
+.introWrap {
+    height: 620px;
+    overflow: hidden;
+}
+.intro {
+    margin-top: 100px !important;
+    height: 450px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas:
+    "i-t i-c"
+    "i-t i-s";
+}
+.intro-title {
+    grid-area: i-t;
+}
+.intro-content {
+    grid-area: i-c;
+}
+.intro-content p:last-child {
+    margin-top: 20px;
+}
+.intro-skills {
+    grid-area: i-s;
+    font-weight: bold;
+}
+.intro-skills>div {
+    margin-bottom: 25px;
+}
+
+.progressbar1,.progressbar2,.progressbar3,.progressbar4 {
+    height: 6px;
+    background: #f3f3f3;
+    border-radius: 3px;
+    margin-top: 22px;
+}
+.progress {
+    height: 6px;
+    background: #17bed2;
+    border-radius: 3px;
+
+}
+.progressbar1 .progress {
+    width: 80%;
+}
+.progressbar2 .progress {
+    width: 60%;
+}
+.progressbar3 .progress {
+    width: 95%;
+}
+.progressbar4 .progress {
+    width: 50%;
+}
+
+
+
+.expWrap {
+    height: 450px;
+    background: #fafafa;
+    overflow: hidden;
+}
+.exp {
+    display: flex;
+    margin-top: 100px !important;
+}
+.exp-title {
+    margin-right: auto;
+}
+.exp-sk1,.exp-sk2,.exp-sk3 {
+    width: 250px;
+    height: 250px;
+    background: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.exp-sk2 {
+    background: #17bed2;
+}
+
+.worksWrap {
+    height: 620px;
+    overflow: hidden;
+}
+
+.contactsWrap {
+    height: 280px;
+    background: #fafafa;
+    overflow: hidden;
+}

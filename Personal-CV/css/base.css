@@ -48,6 +48,9 @@ html{
 .grey {
     color: darkgrey;
 }
+.titleColor {
+    color: #484e61;
+}
 
 .f20{
     font-size: 20px;

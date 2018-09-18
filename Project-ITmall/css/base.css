@@ -37,6 +37,7 @@ table{
 
 html {
     min-width: 800px;
+    max-width: 1920px;
 }
 
 .w {
@@ -56,6 +57,9 @@ html {
 
 .deepGrey {
     color: #2b2d42;
+}
+.white {
+    color: #fff;
 }
 
 .f20{

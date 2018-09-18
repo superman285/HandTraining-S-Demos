@@ -31,6 +31,9 @@
 
 
 /*header部分*/
+header {
+    min-width: 800px;
+}
 /*topNav*/
 .topNavWrap {
     background: #1e1f29;
@@ -196,6 +199,7 @@
     justify-content: space-between;
     margin-top: 20px;
     flex-wrap: wrap;
+    /*min-width: 600px;*/
 }
 
 .topBanner-item {
@@ -232,6 +236,16 @@
     .topBanner-item img{
         width: 100%;
         height: 45vw;
+    }
+}
+@media screen and (max-width: 400px) {
+    .topBanner-item {
+        width: 95%;
+        height: 58vw;
+    }
+    .topBanner-item img{
+        width: 100%;
+        height: 58vw;
     }
 }
 
@@ -273,6 +287,12 @@
 /*-------------------------*/
 
 /*main-section部分，很多可通用*/
+
+main {
+    min-width: 600px;
+}
+
+
 
 /*NewProduct部分*/
 .NewProduct {
@@ -535,6 +555,7 @@ button.ADC:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-width: 800px;
 }
 
 .cB-content {
@@ -703,6 +724,7 @@ button.ADC:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-width: 800px;
 }
 
 .SignUp p {
@@ -751,9 +773,16 @@ button.ADC:hover {
 }
 
 
+/*footer部分*/
+
+footer.siteFooter {
+    min-width: 800px;
+}
+
 .helpNavWrap {
     background: #15161d;
     overflow: hidden;
+
 }
 .helpNavContain {
 
@@ -761,6 +790,7 @@ button.ADC:hover {
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 30px;
+
 }
 
 

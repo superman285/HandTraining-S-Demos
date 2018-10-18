@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="iconfont-sns/iconfont.css">
 </head>
-<body>
+<body id="body">
+    <div class="loadingCircle" id="loadingCircle"></div>
     <header class="topNavWrap">
         <nav class="topNav w">
             <a href="#" class="logo">
@@ -143,6 +144,12 @@
             </div>
         </section>
     </footer>
-
+    <script>
+        body.style = "overflow-y:hidden;";
+        setTimeout(function(){
+            loadingCircle.classList.add('over');
+            body.style = "overflow-y:auto;"
+        },3000);
+    </script>
 </body>
 </html>

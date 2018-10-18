@@ -1,0 +1,9 @@
+diff a/Project-ITmall/index.html b/Project-ITmall/index.html	(rejected hunks)
+@@ -10,6 +10,7 @@
+     <script src="./iconfont-large/iconfont.js"></script>
+     <link rel="stylesheet" href="iconfont-payment/iconfont.css">
+ 
++    
+ </head>
+ <body>
+ 

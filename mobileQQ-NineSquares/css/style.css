@@ -1,0 +1,26 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*grid版本*/
+
+
+/*版本1*/
+main {
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(3, minmax(100px,33vw));
+    grid-template-rows: repeat(3, minmax(100px,33vw));
+}
+
+.square {
+    background: #ff6859;
+}
+
+.square.big {
+    grid-column: 1/span 2;
+    grid-row: 1/3;
+}

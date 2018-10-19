@@ -98,6 +98,10 @@ nav.topNav.sticky {
     width: 100%;
 }
 
+.topNav a:not(:first-of-type).highlight::before {
+    width: 100%;
+}
+
 .topNav a:hover .popupMenu {
     opacity: 1;
     right: 0;
@@ -159,7 +163,27 @@ ul.popupMenu {
 .introWrap {
     height: 620px;
     overflow: hidden;
+    transform: translateY(250px);
+    transition: all .4s linear;
 }
+/*向上渐渐滑入动效，回归到正常位置，之前是在偏下位置*/
+.introWrap.slideUp {
+    transform: translateY(0);
+}
+/*随着向上渐入进度条的变化动画*/
+.introWrap.slideUp .progressbar1 .progress {
+    width: 80%;
+}
+.introWrap.slideUp .progressbar2 .progress {
+    width: 40%;
+}
+.introWrap.slideUp .progressbar3 .progress {
+    width: 95%;
+}
+.introWrap.slideUp .progressbar4 .progress {
+    width: 60%;
+}
+
 .intro {
     margin-top: 100px !important;
     height: 450px;
@@ -197,19 +221,22 @@ ul.popupMenu {
     height: 6px;
     background: #17bed2;
     border-radius: 3px;
-
 }
 .progressbar1 .progress {
-    width: 80%;
+    width: 0%;
+    transition: width 1s .5s linear;
 }
 .progressbar2 .progress {
-    width: 60%;
+    width: 0%;
+    transition: width 1s 1.5s linear;
 }
 .progressbar3 .progress {
-    width: 95%;
+    width: 0%;
+    transition: width 1s 2.5s linear;
 }
 .progressbar4 .progress {
-    width: 50%;
+    width: 0%;
+    transition: width 1s 3.5s linear;
 }
 
 
@@ -218,6 +245,11 @@ ul.popupMenu {
     height: 450px;
     background: #fafafa;
     overflow: hidden;
+    transform: translateY(250px);
+    transition: all .4s linear;
+}
+.expWrap.slideUp {
+    transform: translateY(0);
 }
 .exp {
     display: flex;
@@ -242,6 +274,7 @@ ul.popupMenu {
     box-sizing: border-box;
     box-shadow:2px 4px 8px 0 rgba(46,61,73,.2);
     transition: box-shadow 0.3s linear;
+    cursor: pointer;
 }
 .exp-sk2 {
     background: #17bed2;
@@ -258,6 +291,11 @@ ul.popupMenu {
 .worksWrap {
     height: 620px;
     overflow: hidden;
+    transform: translateY(250px);
+    transition: all .4s linear;
+}
+.worksWrap.slideUp {
+    transform: translateY(0);
 }
 .works {
     margin-top: 100px !important;
@@ -297,6 +335,11 @@ ul.popupMenu {
     height: 280px;
     background: #fafafa;
     overflow: hidden;
+    transform: translateY(250px);
+    transition: all .4s linear;
+}
+.contactsWrap.slideUp {
+    transform: translateY(0);
 }
 .contacts {
     display:flex;

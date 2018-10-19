@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ca8a029a-2546-4d58-9d9a-37e88dfad993" name="默认的" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Personal-CV/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Personal-CV/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Personal-CV/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Personal-CV/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Personal-CV/js/siteFX.js" beforeDir="false" afterPath="$PROJECT_DIR$/Personal-CV/js/siteFX.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -24,9 +22,12 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Personal-CV/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="142">
-                  <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+                <state relative-caret-position="-418">
+                  <caret line="39" column="13" lean-forward="true" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
                   <folding>
+                    <element signature="n#a#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#a#3;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#a#4;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#div#0;n#section#0;n#div#3;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#div#1;n#section#0;n#div#3;n#body#0;n#html#0;n#!!top" />
@@ -39,8 +40,8 @@
           <file leaf-file-name="siteFX.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Personal-CV/js/siteFX.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="179">
-                  <caret line="64" column="46" selection-start-line="64" selection-start-column="46" selection-end-line="64" selection-end-column="46" />
+                <state relative-caret-position="403">
+                  <caret line="93" column="35" selection-start-line="93" selection-start-column="35" selection-end-line="93" selection-end-column="35" />
                 </state>
               </provider>
             </entry>
@@ -52,7 +53,7 @@
           <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Personal-CV/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="3039">
+                <state relative-caret-position="4599">
                   <caret line="238" column="28" selection-start-line="238" selection-start-column="28" selection-end-line="238" selection-end-column="28" />
                 </state>
               </provider>
@@ -107,8 +108,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="118" />
-    <option name="y" value="133" />
+    <option name="x" value="672" />
+    <option name="y" value="57" />
     <option name="width" value="1749" />
     <option name="height" value="990" />
   </component>
@@ -179,7 +180,7 @@
       <workItem from="1539848521990" duration="4648000" />
       <workItem from="1539885640727" duration="3858000" />
       <workItem from="1539943650578" duration="12460000" />
-      <workItem from="1539963403862" duration="4446000" />
+      <workItem from="1539963403862" duration="11052000" />
     </task>
     <task id="LOCAL-00001" summary="添加加载圆圈动画效果，用延迟setTimeout来强制看效果">
       <created>1539886394979</created>
@@ -195,14 +196,21 @@
       <option name="project" value="LOCAL" />
       <updated>1539943807531</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="添加滑动进入区块的渐入动效、滑动进入区块后高亮topNav的对应tab&#10;2018.10.20">
+      <created>1539968201679</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1539968201679</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28315000" />
+    <option name="totallyTimeSpent" value="34921000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="79" y="89" width="1166" height="660" extended-state="0" />
+    <frame x="448" y="38" width="1166" height="660" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.24913195" />
@@ -236,7 +244,13 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="添加加载圆圈动画效果，用延迟setTimeout来强制看效果" />
     <MESSAGE value="添加stickyNavBar效果，向下滑动顶部bar的动态效果。2018.10.19" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加stickyNavBar效果，向下滑动顶部bar的动态效果。2018.10.19" />
+    <MESSAGE value="添加滑动进入区块的渐入动效、滑动进入区块后高亮topNav的对应tab&#10;2018.10.20" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加滑动进入区块的渐入动效、滑动进入区块后高亮topNav的对应tab&#10;2018.10.20" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Personal-CV/index.html">
@@ -244,6 +258,9 @@
         <state relative-caret-position="2720">
           <caret line="136" column="42" selection-start-line="136" selection-start-column="32" selection-end-line="136" selection-end-column="42" />
           <folding>
+            <element signature="n#a#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#a#3;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#a#4;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#section#0;n#div#3;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#section#0;n#div#3;n#body#0;n#html#0;n#!!top" />
@@ -271,6 +288,9 @@
         <state relative-caret-position="640">
           <caret line="32" column="29" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="29" />
           <folding>
+            <element signature="n#a#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#a#3;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#a#4;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#section#0;n#div#3;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#section#0;n#div#3;n#body#0;n#html#0;n#!!top" />
@@ -298,6 +318,9 @@
         <state relative-caret-position="2980">
           <caret line="149" column="16" selection-start-line="149" selection-start-column="16" selection-end-line="149" selection-end-column="16" />
           <folding>
+            <element signature="n#a#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#a#3;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#a#4;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#section#0;n#div#3;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#section#0;n#div#3;n#body#0;n#html#0;n#!!top" />
@@ -397,16 +420,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Personal-CV/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3039">
+        <state relative-caret-position="4599">
           <caret line="238" column="28" selection-start-line="238" selection-start-column="28" selection-end-line="238" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Personal-CV/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+        <state relative-caret-position="-418">
+          <caret line="39" column="13" lean-forward="true" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
           <folding>
+            <element signature="n#a#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#a#3;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#a#4;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#section#0;n#div#3;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#section#0;n#div#3;n#body#0;n#html#0;n#!!top" />
@@ -417,8 +443,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Personal-CV/js/siteFX.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="64" column="46" selection-start-line="64" selection-start-column="46" selection-end-line="64" selection-end-column="46" />
+        <state relative-caret-position="403">
+          <caret line="93" column="35" selection-start-line="93" selection-start-column="35" selection-end-line="93" selection-end-column="35" />
         </state>
       </provider>
     </entry>

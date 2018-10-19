@@ -1,8 +1,3 @@
-var siteAbout = document.getElementById("about");
-var siteExp = document.getElementById("exp");
-var siteWork = document.getElementById("work");
-var siteContact = document.getElementById("contact");
-
 var sitePart = document.getElementsByClassName("offsetYdiv");
 var offsetY_Part;
 
@@ -55,12 +50,56 @@ function tabAutoHighLight(scrollY) {
         }
     }
 }
-
+//阻止topNav的链接的默认跳转行为，用js来跳转
+function preventDefalut(){
+    var aTags = document.querySelectorAll(".topNavWrap a");
+    for (let i = 0; i < aTags.length; i++) {
+        console.log(aTags[i]);
+        aTags[i].onclick = (event)=>{
+            event.preventDefault();
+            let n = 20;
+            let duration = 50;
+            let ic = 0;
+            function stepAnim(targetTop){
+                let step = (targetTop - window.scrollY)/n;
+                let scAnim = setInterval(()=>{
+                    if(ic === n){
+                        window.clearInterval(scAnim);
+                        return;
+                    }
+                    ic = ic + 1;
+                    window.scrollTo(0, window.scrollY + step);
+                    console.log('步进'+step * ic);
+                },duration);
+            }
+            switch (i){
+                case 0:
+                case 1:
+                    stepAnim(0);
+                    // window.scrollTo(0,0); //顶
+                    break;
+                case 2:
+                    stepAnim(510);
+                    break;
+                case 3:
+                    stepAnim(1120);
+                    // window.scrollTo(0,1120); //1120
+                    break;
+                case 4:
+                    stepAnim(1570);
+                    // window.scrollTo(0,1570); //1570
+                    break;
+            }
+            // window.scrollTo(0,2000); //底部不管
+        };
+    }
+}
+var actHomeTab = document.querySelector(`[href="#top"]`);
 if (window.scrollY < 240) {
-    var actHomeTab = document.querySelector(`[href="#top"]`);
     actHomeTab.classList.add('highlight');
 }
 actHomeTab.onclick = ()=>{
+    console.log('点home');
     for (let i = 2; i < 6; i++) {
         actHomeTab.classList.add('highlight');
         //这4个顺序的节点正好对应about exp work contact
@@ -68,6 +107,11 @@ actHomeTab.onclick = ()=>{
     }
 };
 
+var actTab2 = document.querySelector(`[href="#about"]`);
+actTab2.onclick = function(){
+};
+
+preventDefalut();
 window.onscroll = function () {
     var siteHeader = document.querySelector(".topNavWrap");
     var topNav = document.querySelector(".topNav");

@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="iconfont-sns/iconfont.css">
 </head>
 <body id="body">
+    <!--过渡动画圆圈-->
     <div class="loadingCircle" id="loadingCircle"></div>
+
     <header class="topNavWrap">
         <nav class="topNav w">
             <a href="#" class="logo">
@@ -19,8 +21,20 @@
             </a>
             <a href="#" class="f14 bold">HOME</a>
             <a href="#about" class="f14 bold">ABOUT</a>
-            <a href="#exp" class="f14 bold">EXPERIENCE</a>
-            <a href="#work" class="f14 bold">WORK</a>
+            <a href="#exp" class="f14 bold">EXPERIENCE
+                <ul class="popupMenu">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                </ul>
+            </a>
+            <a href="#work" class="f14 bold">WORK
+                <ul class="popupMenu">
+                    <li>DemoZ</li>
+                    <li>ProjectX</li>
+                    <li>WorkY</li>
+                </ul>
+            </a>
             <a href="#contact" class="f14 bold">CONTACT</a>
         </nav>
     </header>
@@ -149,7 +163,8 @@
         setTimeout(function(){
             loadingCircle.classList.add('over');
             body.style = "overflow-y:auto;"
-        },3000);
+        },500);
     </script>
+    <script src="js/siteFX.js"></script>
 </body>
 </html>

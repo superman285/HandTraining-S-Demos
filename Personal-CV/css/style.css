@@ -47,19 +47,28 @@ body {
 
 
 header {
-    background: #fff;
-    box-shadow: 0 1px 6px silver;
+    background: transparent;
+    box-shadow: 0 0 6px 1px dimgrey;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 2;
+    transition: all .3s linear;
+}
+.topNavWrap.sticky {
+    background: white;
 }
 
 nav.topNav {
     height: 100px;
     display: flex;
     align-items: center;
+    transition: all .5s linear;
+}
+nav.topNav.sticky {
+    height: 75px;
+    color: black !important;
 }
 
 .topNav a:first-child {
@@ -69,14 +78,43 @@ nav.topNav {
     margin-left: 40px;
 }
 
+.topNav .logo {
+    margin-bottom: 5px;
+}
 .topNav a {
     position: relative;
 }
-.topNav a:not(:first-of-type):hover::before {
-    content: '—';
+
+.topNav a:not(:first-of-type)::before {
+    content: '';
+    width: 0;
     position: absolute;
-    right: 106%;
-    color: #17bed2;
+    top: 120%;
+    height: 4px;
+    background: #17bed2;
+    transition: all .3s linear;
+}
+.topNav a:not(:first-of-type):hover::before {
+    width: 100%;
+}
+
+.topNav a:hover .popupMenu {
+    opacity: 1;
+    right: 0;
+}
+ul.popupMenu {
+    opacity: 0;
+    position: absolute;
+    top:140%;
+    right: 50%;
+    padding: 10px;
+    background: white;
+    box-shadow: 0 0 5px 1px grey;
+    text-align: right;
+    transition: all .3s linear;
+}
+.popupMenu li:not(:last-child) {
+    margin-bottom: 10px;
 }
 
 .hidden-fix {
@@ -89,6 +127,7 @@ nav.topNav {
     background: url("../img/1920x1080/01.jpg");
     background-size: cover;
     overflow: hidden;
+    margin-top:-100px;
 }
 .myInfo>* {
     color: white;

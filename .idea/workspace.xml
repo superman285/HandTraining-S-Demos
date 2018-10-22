@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ca8a029a-2546-4d58-9d9a-37e88dfad993" name="默认的" comment="点击tap平滑滚动动画，添加缓动效果&#10;ver2.0 From 2018.10.21">
+    <list default="true" id="ca8a029a-2546-4d58-9d9a-37e88dfad993" name="默认的" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Personal-CV/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Personal-CV/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Personal-CV/js/siteFX.js" beforeDir="false" afterPath="$PROJECT_DIR$/Personal-CV/js/siteFX.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,11 +18,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.5407986">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Personal-CV/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="354">
-                  <caret line="85" column="22" lean-forward="true" selection-start-line="85" selection-start-column="22" selection-end-line="85" selection-end-column="22" />
+                <state relative-caret-position="186">
+                  <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
                   <folding>
                     <element signature="n#a#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#a#3;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
@@ -38,11 +36,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="siteFX.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="siteFX.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Personal-CV/js/siteFX.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="126">
-                  <caret line="64" column="41" lean-forward="true" selection-start-line="64" selection-start-column="41" selection-end-line="64" selection-end-column="41" />
+                <state relative-caret-position="1640">
+                  <caret line="82" column="23" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
                 </state>
               </provider>
             </entry>
@@ -109,8 +107,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="499" />
-    <option name="y" value="58" />
+    <option name="x" value="201" />
+    <option name="y" value="69" />
     <option name="width" value="1749" />
     <option name="height" value="990" />
   </component>
@@ -120,7 +118,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -128,27 +125,18 @@
               <item name="git仓库" type="b2602c69:ProjectViewProjectNode" />
               <item name="git仓库" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="git仓库" type="b2602c69:ProjectViewProjectNode" />
-              <item name="git仓库" type="462c0819:PsiDirectoryNode" />
-              <item name="Personal-CV" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="git仓库" type="b2602c69:ProjectViewProjectNode" />
-              <item name="git仓库" type="462c0819:PsiDirectoryNode" />
-              <item name="Personal-CV" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="E:/JRG前端项目/Personal-CV" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.gutterIcons" />
@@ -182,7 +170,8 @@
       <workItem from="1539885640727" duration="3858000" />
       <workItem from="1539943650578" duration="12460000" />
       <workItem from="1539963403862" duration="11349000" />
-      <workItem from="1540053176502" duration="2678000" />
+      <workItem from="1540053176502" duration="3073000" />
+      <workItem from="1540223469803" duration="272000" />
     </task>
     <task id="LOCAL-00001" summary="添加加载圆圈动画效果，用延迟setTimeout来强制看效果">
       <created>1539886394979</created>
@@ -212,26 +201,31 @@
       <option name="project" value="LOCAL" />
       <updated>1539974858658</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="点击tap平滑滚动动画，添加缓动效果&#10;ver2.0 From 2018.10.21">
+      <created>1540055892503</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1540055892504</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37896000" />
+    <option name="totallyTimeSpent" value="38563000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="333" y="39" width="1166" height="660" extended-state="0" />
-    <editor active="true" />
+    <frame x="134" y="46" width="1166" height="660" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.24913195" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24913195" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="调试" order="7" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="消息" order="8" visible="true" weight="0.32789856" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="运行" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -240,6 +234,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="消息" order="8" visible="true" weight="0.32789856" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
@@ -264,6 +259,36 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Personal-CV/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="24" column="37" lean-forward="true" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+          <folding>
+            <element signature="n#a#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#a#3;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#a#4;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#section#0;n#div#3;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#section#0;n#div#3;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Personal-CV/js/siteFX.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1640">
+          <caret line="82" column="23" lean-forward="true" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Personal-CV/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4760">
+          <caret line="238" column="28" selection-start-line="238" selection-start-column="28" selection-end-line="238" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Personal-CV/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="780">
@@ -466,10 +491,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Personal-CV/js/siteFX.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1640">
+          <caret line="82" column="23" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Personal-CV/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="85" column="22" lean-forward="true" selection-start-line="85" selection-start-column="22" selection-end-line="85" selection-end-column="22" />
+        <state relative-caret-position="186">
+          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
           <folding>
             <element signature="n#a#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#a#3;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" />
@@ -479,13 +511,6 @@
             <element signature="n#div#1;n#section#0;n#div#3;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Personal-CV/js/siteFX.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="64" column="41" lean-forward="true" selection-start-line="64" selection-start-column="41" selection-end-line="64" selection-end-column="41" />
         </state>
       </provider>
     </entry>

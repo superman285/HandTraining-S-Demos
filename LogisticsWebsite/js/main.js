@@ -1,5 +1,2 @@
-
-var ak = document.querySelectorAll("fd");
-
-console.log(ak);
+console.log(666);
 

@@ -11,7 +11,7 @@ ol,ul,dl {
 
 a {
     text-decoration: none;
-    color: #fff;
+    color: #000;
 }
 
 a:hover {
@@ -54,7 +54,7 @@ html {
     color: #2b2d42;
 }
 .white {
-    color: #fff;
+    color: #ffffff;
 }
 .orange {
     color: #df723e;

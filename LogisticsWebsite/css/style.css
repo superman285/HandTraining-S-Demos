@@ -1,1 +1,23 @@
 
+header {
+    background: #ffffff;
+}
+
+.topSec {
+    height: 105px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topNavWrap {
+    background: #261210;
+}
+.topNav {
+    height: 60px;
+}
+
+
+.topNav a:hover {
+    background: #130908;
+}

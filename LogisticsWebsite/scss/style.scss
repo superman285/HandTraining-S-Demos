@@ -1,0 +1,54 @@
+
+header {
+  background: #ffffff;
+}
+
+.topSec {
+  height: 105px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    font-size: 0.9rem;
+  }
+  .logo {
+    margin-bottom: 10px;
+  }
+  .s1,.s2,.s3,.s4 {
+    margin-top: 10px;
+    img {
+      vertical-align: middle;
+      padding-bottom: 6px;
+    }
+  }
+  .s1 {
+    margin-left: 60px;
+  }
+}
+.topSec-end {
+  width: 160px;
+  span {
+    font-size: 0.9rem;
+  }
+}
+
+.topNavWrap {
+  background: #582723;
+}
+.topNav {
+  height: 60px;
+  display: flex;
+  a {
+    color: #fff;
+    flex: 1;
+    height: 100%;
+    line-height: 60px;
+    text-align: center;
+    &:hover {
+      background: #000;
+      color: #df723e;
+      font-weight: bold;
+    }
+  }
+
+}

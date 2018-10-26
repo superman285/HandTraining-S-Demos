@@ -1,23 +1,19 @@
+header { background: #ffffff; }
 
-header {
-    background: #ffffff;
-}
+.topSec { height: 105px; display: flex; justify-content: space-between; align-items: center; }
+.topSec a { font-size: 0.9rem; }
+.topSec .logo { margin-bottom: 10px; }
+.topSec .s1, .topSec .s2, .topSec .s3, .topSec .s4 { margin-top: 10px; }
+.topSec .s1 img, .topSec .s2 img, .topSec .s3 img, .topSec .s4 img { vertical-align: middle; padding-bottom: 6px; }
+.topSec .s1 { margin-left: 60px; }
 
-.topSec {
-    height: 105px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+.topSec-end { width: 160px; }
+.topSec-end span { font-size: 0.9rem; }
 
-.topNavWrap {
-    background: #261210;
-}
-.topNav {
-    height: 60px;
-}
+.topNavWrap { background: #582723; }
 
+.topNav { height: 60px; display: flex; }
+.topNav a { color: #fff; flex: 1; height: 100%; line-height: 60px; text-align: center; }
+.topNav a:hover { background: #000; color: #df723e; font-weight: bold; }
 
-.topNav a:hover {
-    background: #130908;
-}
+/*# sourceMappingURL=style.css.map */

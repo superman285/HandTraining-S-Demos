@@ -1,3 +1,5 @@
+html { overflow-x: hidden; }
+
 header { background: #ffffff; }
 
 .topSec { height: 105px; display: flex; justify-content: space-between; align-items: center; }
@@ -13,7 +15,48 @@ header { background: #ffffff; }
 .topNavWrap { background: #582723; }
 
 .topNav { height: 60px; display: flex; }
-.topNav a { color: #fff; flex: 1; height: 100%; line-height: 60px; text-align: center; }
+.topNav a { color: #fff; flex: 1; height: 100%; line-height: 60px; text-align: center; position: relative; }
 .topNav a:hover { background: #000; color: #df723e; font-weight: bold; }
+.topNav a:hover ul { display: block; }
+.topNav a ul { display: none; position: absolute; background: #fff; box-shadow: 0 0 5px 1px #c8c8c8; top: 100%; width: 100%; color: black; font-size: 0.9rem; font-weight: normal; }
+.topNav a ul > li { height: 40px; line-height: 40px; border-bottom: 1px solid #c8c8c8; transition: all .3s linear; }
+.topNav a ul > li:hover { background: #df723e; color: #fff; }
+
+.topBanner { width: 100vw; height: 27.5vw; background: url("../img/banner1.jpg") no-repeat; background-size: cover; }
+
+.productWrap { background: #ffffff; }
+
+.product { height: 310px; overflow: hidden; }
+.product h2 { margin-top: 20px; padding-bottom: 10px; border-bottom: 1px solid #c8c8c8; }
+.product span:first-child { font-weight: normal; }
+.product span:last-of-type { color: darkgrey; font-weight: normal; }
+
+.productContent { display: flex; flex-direction: row; justify-content: space-between; }
+
+.productItem { text-align: center; }
+.productItem .pI-circle { width: 160px; height: 160px; border-radius: 80px; margin-top: 20px; background: #df723e url("../img/pcon1.png") no-repeat center; }
+.productItem h3 { color: #df723e; margin-top: 10px; }
+.productItem span { font-size: 0.6rem; margin-top: 10px; }
+
+.inquierWrap { background: #f8f8f8; }
+
+.inquire { height: 385px; overflow: hidden; }
+.inquire h2 { margin-top: 20px; padding-bottom: 10px; border-bottom: 1px solid #c8c8c8; }
+.inquire span:first-child { font-weight: normal; }
+.inquire span:last-of-type { color: darkgrey; font-weight: normal; }
+
+.newsWrap { background: #ffffff; }
+
+.news { height: 390px; overflow: hidden; }
+.news h2 { margin-top: 20px; padding-bottom: 10px; border-bottom: 1px solid #c8c8c8; }
+.news span:first-child { font-weight: normal; }
+.news span:last-of-type { color: darkgrey; font-weight: normal; }
+
+.partnersWrap { background: #f8f8f8; }
+
+.partners { height: 235px; overflow: hidden; }
+.partners h2 { margin-top: 20px; padding-bottom: 10px; border-bottom: 1px solid #c8c8c8; }
+.partners span:first-child { font-weight: normal; }
+.partners span:last-of-type { color: darkgrey; font-weight: normal; }
 
 /*# sourceMappingURL=style.css.map */

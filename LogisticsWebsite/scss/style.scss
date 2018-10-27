@@ -1,3 +1,5 @@
+/*颜色变量*/
+$orange: #df723e;
 
 html {
   overflow-x: hidden;
@@ -52,7 +54,7 @@ header {
 
     &:hover {
       background: #000;
-      color: #df723e;
+      color: $orange;
       font-weight: bold;
       ul {
         display: block;
@@ -75,7 +77,7 @@ header {
         border-bottom: 1px solid #c8c8c8;
         transition: all .3s linear;
         &:hover {
-          background: #df723e;
+          background: $orange;
           color: #fff;
         }
       }
@@ -104,11 +106,12 @@ header {
     font-weight: normal;
   }
 }
+
 .productWrap {
   background: #ffffff;
 }
 .product {
-  height: 310px;
+  height: 315px;
   overflow: hidden;
   @include mainContent-title;
 }
@@ -125,10 +128,24 @@ header {
     height: 160px;
     border-radius: 80px;
     margin-top: 20px;
-    background: #df723e url("../img/pcon1.png") no-repeat center;
+  }
+  .pIc1 {
+    background: $orange url("../img/pcon1.png") no-repeat center;
+  }
+  .pIc2 {
+    background: $orange url("../img/pcon2.png") no-repeat center;
+  }
+  .pIc3 {
+    background: $orange url("../img/pcon3.png") no-repeat center;
+  }
+  .pIc4 {
+    background: $orange url("../img/pcon4.png") no-repeat center;
+  }
+  .pIc5 {
+    background: $orange url("../img/pcon5.png") no-repeat center;
   }
   h3 {
-    color: #df723e;
+    color: $orange;
     margin-top: 10px;
   }
   span {
@@ -145,6 +162,51 @@ header {
   height: 385px;
   overflow: hidden;
   @include mainContent-title;
+}
+.inquireContent {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+.iqC-Item {
+  flex: 0.3;
+  height: 295px;
+  background: #ffffff;
+  text-align: center;
+  .iqC-Item-midLayer {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h3 {
+    color: $orange;
+    margin-top: 15px;
+  }
+  input {
+    border: 1px solid darkgrey;
+    height: 35px;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-top: 15px;
+    &::placeholder {
+      font-size: 0.85rem;
+    }
+  }
+  button {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #ffffff;
+    padding: 8px 20px;
+    background: $orange;
+    align-self: flex-end;
+  }
+  hr {
+    width: 100%;
+    margin-top: 15px;
+  }
 }
 
 

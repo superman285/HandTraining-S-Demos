@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/*颜色变量*/
 html { overflow-x: hidden; }
 
 header { background: #ffffff; }
@@ -26,7 +28,7 @@ header { background: #ffffff; }
 
 .productWrap { background: #ffffff; }
 
-.product { height: 310px; overflow: hidden; }
+.product { height: 315px; overflow: hidden; }
 .product h2 { margin-top: 20px; padding-bottom: 10px; border-bottom: 1px solid #c8c8c8; }
 .product span:first-child { font-weight: normal; }
 .product span:last-of-type { color: darkgrey; font-weight: normal; }
@@ -34,7 +36,12 @@ header { background: #ffffff; }
 .productContent { display: flex; flex-direction: row; justify-content: space-between; }
 
 .productItem { text-align: center; }
-.productItem .pI-circle { width: 160px; height: 160px; border-radius: 80px; margin-top: 20px; background: #df723e url("../img/pcon1.png") no-repeat center; }
+.productItem .pI-circle { width: 160px; height: 160px; border-radius: 80px; margin-top: 20px; }
+.productItem .pIc1 { background: #df723e url("../img/pcon1.png") no-repeat center; }
+.productItem .pIc2 { background: #df723e url("../img/pcon2.png") no-repeat center; }
+.productItem .pIc3 { background: #df723e url("../img/pcon3.png") no-repeat center; }
+.productItem .pIc4 { background: #df723e url("../img/pcon4.png") no-repeat center; }
+.productItem .pIc5 { background: #df723e url("../img/pcon5.png") no-repeat center; }
 .productItem h3 { color: #df723e; margin-top: 10px; }
 .productItem span { font-size: 0.6rem; margin-top: 10px; }
 
@@ -44,6 +51,16 @@ header { background: #ffffff; }
 .inquire h2 { margin-top: 20px; padding-bottom: 10px; border-bottom: 1px solid #c8c8c8; }
 .inquire span:first-child { font-weight: normal; }
 .inquire span:last-of-type { color: darkgrey; font-weight: normal; }
+
+.inquireContent { display: flex; justify-content: space-around; padding-top: 10px; }
+
+.iqC-Item { flex: 0.3; height: 295px; background: #ffffff; text-align: center; }
+.iqC-Item .iqC-Item-midLayer { width: 90%; margin: 0 auto; display: flex; flex-direction: column; align-items: center; }
+.iqC-Item h3 { color: #df723e; margin-top: 15px; }
+.iqC-Item input { border: 1px solid darkgrey; height: 35px; width: 100%; padding: 0 10px; box-sizing: border-box; margin-top: 15px; }
+.iqC-Item input::placeholder { font-size: 0.85rem; }
+.iqC-Item button { margin-top: 15px; font-size: 1rem; color: #ffffff; padding: 8px 20px; background: #df723e; align-self: flex-end; }
+.iqC-Item hr { width: 100%; margin-top: 15px; }
 
 .newsWrap { background: #ffffff; }
 

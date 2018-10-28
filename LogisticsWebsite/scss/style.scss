@@ -40,6 +40,7 @@ header {
 
 .topNavWrap {
   background: #582723;
+  width: 100vw;
 }
 .topNav {
   height: 60px;
@@ -109,6 +110,7 @@ header {
 
 .productWrap {
   background: #ffffff;
+  width: 100vw;
 }
 .product {
   height: 315px;
@@ -157,6 +159,7 @@ header {
 
 .inquierWrap {
   background: #f8f8f8;
+  width: 100vw;
 }
 .inquire {
   height: 385px;
@@ -212,18 +215,132 @@ header {
 
 .newsWrap {
   background: #ffffff;
+  width: 100vw;
 }
 .news {
   height: 390px;
   overflow: hidden;
   @include  mainContent-title;
 }
+.newsContent {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.nClist {
+  flex: 0.42;
+  li {
+    font-size: .9rem;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.nCpic {
+  flex: 0.56;
+  background: url("../img/n1.png") no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
 
 .partnersWrap {
   background: #f8f8f8;
+  width: 100vw;
 }
 .partners {
   height: 235px;
   overflow: hidden;
   @include  mainContent-title;
+}
+.partnersContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.partnerLogo {
+  height: 55px;
+  width: 175px;
+  margin-top: 20px;
+  box-sizing: border-box;
+  border: 1px solid lightgrey;
+  &:nth-of-type(1) {
+    background: url("../img/link1.jpg");
+  }
+  &:nth-of-type(2) {
+    background: url("../img/link2.jpg");
+  }
+  &:nth-of-type(3) {
+    background: url("../img/link3.jpg");
+  }
+  &:nth-of-type(4) {
+    background: url("../img/link4.jpg");
+  }
+  &:nth-of-type(5) {
+    background: url("../img/link5.jpg");
+  }
+  &:nth-of-type(6) {
+    background: url("../img/link6.jpg");
+  }
+  &:nth-of-type(7) {
+    background: url("../img/link7.jpg");
+  }
+  &:nth-of-type(8) {
+    background: url("../img/link8.jpg");
+  }
+  &:nth-of-type(9) {
+    background: url("../img/link9.jpg");
+  }
+  &:nth-of-type(10) {
+    background: url("../img/link2.jpg");
+  }
+}
+
+.bottomInfo {
+  background: #261310;
+  width: 100vw;
+}
+.bIcontent {
+  height: 205px;
+  display: flex;
+  justify-content: space-between;
+
+  dl {
+    color: white;
+  }
+  dt {
+    font-weight: bold;
+    margin-top: 15px;
+  }
+  dd {
+    font-size: .9rem;
+    margin-top: 10px;
+    &.last {
+      margin-top: 0;
+    }
+  }
+  .QR {
+    margin-top: 2px;
+    width: 250px;
+    display: flex;
+    span {
+      font-size: .9rem;
+      vertical-align: top;
+    }
+  }
+}
+
+.bottomAddr {
+  width: 100vw;
+  font-size: 0.9rem;
+  height: 40px;
+  line-height: 36px;
+  background: $orange;
+  color: white;
+  text-align: center;
 }

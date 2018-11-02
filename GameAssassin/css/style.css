@@ -14,7 +14,7 @@ html { max-width: 1680px; min-width: 1140px; }
 .topNav .nav-item:nth-of-type(4) { background: #f7c75a; }
 .topNav .nav-item:nth-of-type(5) { background: #80e8d4; }
 .topNav .nav-item:nth-of-type(63) { background: #f08187; }
-.topNav .nav-item:hover { opacity: .6; color: black; }
+.topNav .nav-item:hover { opacity: .7; color: black; }
 
 .topBanner { margin-top: -30px; width: 100vw; height: 45vw; background: url("../img/2.jpg") no-repeat; background-size: cover; }
 

@@ -1,0 +1,86 @@
+/*样式初始化*/
+
+html,body,dl,dt,dd,ul,ol,li,form,input,p,th,td,h1,h2,h3,h4,h5,h6,figure {
+  margin:0;
+  padding:0;
+}
+
+ol,ul,dl {
+  list-style:none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+input,img,button,select {
+  border:none;
+  outline:none;
+  vertical-align: middle;
+  padding:0;
+  margin: 0;
+}
+table{
+  border-collapse:collapse;
+  border-spacing: 0;
+}
+
+html {
+  min-width: 1140px;
+  max-width: 1680px;
+}
+
+.w {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+
+/*字体*/
+.red {
+  color: #d10024;
+}
+
+.lightGrey {
+  color: #8993a8;
+}
+
+.deepGrey {
+  color: #2b2d42;
+}
+.white {
+  color: #ffffff;
+}
+.orange {
+  color: #df723e;
+}
+
+
+.bold{
+  font-weight: bold;
+}
+
+/*清除浮动*/
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+.clearfix{
+  zoom: 1;
+}
+
+/*边框和padding不影响实际大小的css3新属性*/
+.border-box{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.bg-suit {
+  background-size: cover;
+}

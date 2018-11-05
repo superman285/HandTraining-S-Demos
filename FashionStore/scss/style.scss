@@ -238,10 +238,99 @@ $ored: #ee5845;
   }
 }
 
+/*downPart*/
+.downPart {
+  margin-top: 50px;
+}
+.LatestNews {
+  a {
+    color: #000;
+    font-size: 2rem;
+    text-decoration: underline;
+  }
+}
+
+.LNgrid {
+  display: grid;
+  margin-top: 55px;
+  grid-template-rows: repeat(2,200px);
+  grid-template-columns: 365px 340px 350px;
+  grid-row-gap: 40px;
+  justify-content: space-between;
+}
+
+.lPic1 {
+  background: url("../img/bl.jpg") no-repeat;
+  background-size: cover;
+}
+.lPic2 {
+  background: #3d99f7;
+}
+
+@mixin LNtext {
+
+}
+
+.cenTxt1 {
+
+}
+.cenTxt2 {
+
+}
+
+.rBigPic {
+  grid-row: span 2;
+  background: url("../img/bl1.jpg");
+  div.rmask {
+    width: 100%;
+    height: 100%;
+    background: rgba(235, 32, 0, 0.2);
+  }
+}
 
 
+.bottomPic {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 225px;
+  margin-top: 60px;
+  background: url("../img/product.jpg") no-repeat;
+  background-size: cover;
+  .bPcenter {
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    border: 1px solid white;
+    box-sizing: border-box;
+  }
+  .bPright {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    width: 395px;
+    height: 100%;
+    background: darkgrey;
+    p:last-child {
+      text-transform: uppercase;
+    }
+  }
+}
 
 /*footer部分*/
 
 
-
+.site-footer {
+  margin-top: 60px;
+  background: #eee;
+  border-top: 1px solid black;
+}
+.bottomInfo {
+  height: 585px;
+  border-bottom: 2px solid black;
+  box-sizing: border-box;
+}
+.site-info {
+  height: 135px;
+}

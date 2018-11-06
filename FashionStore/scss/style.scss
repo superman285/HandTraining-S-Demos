@@ -136,9 +136,18 @@ $ored: #ee5845;
   row-gap: 40px;
 }
 
+@mixin blocktxt {
+  color: #f1f1f1;
+  font-size: 35px;
+  font-weight: 700;
+  padding: 40px 60px;
+  text-shadow: 1px 1px 2px black;
+}
+
 .Shoes {
-  background: #000;
   position: relative;
+  @include blocktxt;
+  background: #000;
   img {
     height: 150px;
     width: 170px;
@@ -148,8 +157,9 @@ $ored: #ee5845;
   }
 }
 .Bags {
-  background: #937361;
   position: relative;
+  @include blocktxt;
+  background: #937361;
   img {
     position: absolute;
     right:-20px;
@@ -163,12 +173,45 @@ $ored: #ee5845;
   .mask {
     width: 100%;
     height: 100%;
+    color: #ffffff;
+    text-align: center;
     background: rgba(238, 12, 4, 0.2);
+    overflow: hidden;
+    h1 {
+      font-size: 30px;
+      text-shadow: 1px 1px 1px black;
+      margin-bottom: 10px;
+      margin-top: 100px;
+    }
+    span {
+      font-size: 26px;
+    }
+    hr {
+      width: 80%;
+      border: none;
+      border-bottom: 2px solid white;
+    }
+    p {
+      margin-top: 20px;
+      font-size: 70px;
+      font-weight: 100;
+    }
   }
 }
 .Member {
   grid-column: span 2;
+  @include blocktxt;
   background: #686767;
+  button {
+    float: right;
+    width: 190px;
+    height: 55px;
+    color: white;
+    font-size: 1.75rem;
+    border: 2px solid white;
+    background: transparent;
+    box-sizing: border-box;
+  }
 }
 
 
@@ -200,7 +243,7 @@ $ored: #ee5845;
 .showsContent {
   display: flex;
   margin-top: 30px;
-  div {
+  >div {
     flex: 1;
     height: 570px;
   }
@@ -209,14 +252,43 @@ $ored: #ee5845;
     background-size: cover;
   }
   .sc2 {
+    position: relative;
     background: url("../img/pi3.jpg") no-repeat;
     background-size: cover;
   }
   .sc3 {
+    position: relative;
     background: url("../img/pi4.jpg") no-repeat;
     background-size: cover;
   }
 }
+.discount-circle {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding-top: 17px;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  font-size: 1.1rem;
+  text-align: center;
+  border-radius: 30px;
+  box-sizing: border-box;
+  &.purple {
+    background: #a888d2;
+  }
+  &.red {
+    background: $ored;
+    span {
+      position: absolute;
+      right: 11px;
+      top: 35px;
+      font-size: .85rem;
+      font-weight: 100;
+    }
+  }
+}
+
 
 
 /*midBanner部分*/
@@ -265,27 +337,82 @@ $ored: #ee5845;
   background-size: cover;
 }
 .lPic2 {
+  padding-top: 30px;
+  color: #ffffff;
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-align: center;
   background: #3d99f7;
+  p {
+    margin-top: 10px;
+    font-size: 60px;
+    font-weight: 100;
+  }
 }
 
-@mixin LNtext {
 
+@mixin LNtext {
+  h1 {
+    font-size: 35px;
+  }
+  h5 {
+    margin-top: -5px;
+    font-weight: 300;
+  }
+  p {
+    margin-top: 20px;
+    font-size: .85rem;
+  }
+  button {
+    float: right;
+    width: 90px;
+    height: 30px;
+    margin-top: 25px;
+    font-size: .9rem;
+    font-weight: 700;
+    border: 2px solid black;
+    box-sizing: border-box;
+  }
 }
 
 .cenTxt1 {
+  position: relative;
 
+  i {
+    position: absolute;
+    top: 7px;
+    font-size: 2rem;
+    &.icon-arrowleft {
+      right: 32px;
+    }
+    &.icon-arrowright {
+      right: 0;
+    }
+  }
+  @include LNtext;
 }
 .cenTxt2 {
-
+  @include LNtext;
 }
 
 .rBigPic {
   grid-row: span 2;
   background: url("../img/bl1.jpg");
   div.rmask {
+    padding-top: 80px;
     width: 100%;
     height: 100%;
     background: rgba(235, 32, 0, 0.2);
+    box-sizing: border-box;
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    p {
+      margin-top: 40px;
+      font-size: 80px;
+      font-weight: 100;
+    }
   }
 }
 
@@ -312,8 +439,21 @@ $ored: #ee5845;
     right: 0;
     width: 395px;
     height: 100%;
+    padding-right: 40px;
+    color: #ffffff;
+    box-sizing: border-box;
     background: darkgrey;
+    p:first-child {
+      margin-top: 65px;
+      font-size: 1.75rem;
+      font-weight: 200;
+      text-align: right;
+    }
     p:last-child {
+      margin-top: 15px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-align: right;
       text-transform: uppercase;
     }
   }

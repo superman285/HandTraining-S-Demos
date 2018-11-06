@@ -25,7 +25,7 @@
 .banner-aside > div { width: 735px; height: 185px; background: rgba(235, 32, 0, 0.3); }
 .banner-aside h1 { text-align: right; margin-top: 20px; margin-right: 30px; }
 .banner-aside p { text-align: right; color: #ffffff; font-size: 1.6rem; margin-top: 30px; margin-right: 30px; }
-.banner-aside button { width: 180px; height: 45px; font-size: 1.5rem; margin-top: 20px; }
+.banner-aside button { width: 180px; height: 45px; font-size: 1.5rem; margin-top: 20px; margin-right: 20px; }
 .banner-aside button.btn-exp { background: #ee5845; color: #ffffff; box-sizing: border-box; margin-left: 300px; }
 .banner-aside button.btn-shop { background: transparent; border: 1px solid black; box-sizing: border-box; }
 
@@ -83,8 +83,39 @@
 /*footer部分*/
 .site-footer { margin-top: 60px; background: #eee; border-top: 1px solid black; }
 
-.bottomInfo { height: 585px; border-bottom: 2px solid black; box-sizing: border-box; }
+.bottomInfo { display: flex; height: 585px; border-bottom: 2px solid black; box-sizing: border-box; }
 
-.site-info { height: 135px; }
+.bIleft { flex: 1; margin-top: 60px; }
+.bIleft h1 { margin-bottom: 40px; border-bottom: 1px solid black; }
+.bIleft input { width: 100%; height: 30px; margin-bottom: 20px; padding: 0 6px; font-size: .9rem; border: 1px solid black; box-sizing: border-box; }
+.bIleft textarea { width: 100%; height: 115px; margin-bottom: 30px; padding: 6px; font-size: .9rem; resize: none; border: 1px solid black; box-sizing: border-box; }
+.bIleft button { float: right; width: 140px; height: 35px; color: white; font-size: .9rem; background: #ee5845; }
+
+.bIcenter { flex: 1; margin: 60px 30px; }
+.bIcenter h1 { border-bottom: 1px solid black; }
+.bIcenter .bIc-content { display: flex; justify-content: space-between; margin-top: 30px; }
+.bIcenter .bic-txt h3 { color: #ee5845; }
+.bIcenter .bic-txt i { color: #ffc33e; }
+.bIcenter .bic-pic { width: 85px; height: 120px; border: 1px solid black; box-sizing: border-box; }
+.bIcenter .bic-pic.item1 { background: url("../img/f1.jpg") no-repeat; background-size: cover; }
+.bIcenter .bic-pic.item2 { background: url("../img/f2.jpg") no-repeat; background-size: cover; }
+.bIcenter .bic-pic.item3 { background: url("../img/f3.jpg") no-repeat; background-size: cover; }
+
+.bIright { position: relative; flex: 1.1; margin-top: 110px; }
+
+.bIlogo { position: absolute; }
+
+.bIr-txt { margin-left: 120px; margin-bottom: 30px; }
+.bIr-txt p { font-size: .9rem; }
+
+.additional { margin-left: 35px; }
+
+.contact { display: flex; flex-direction: column; margin-left: 35px; }
+.contact a { margin-top: 15px; }
+
+.pay { margin-left: 35px; margin-top: 20px; }
+
+.site-info { height: 135px; line-height: 135px; text-align: center; font-size: 1.2rem; font-style: normal; font-weight: 700; }
+.site-info a { color: #ee5845; }
 
 /*# sourceMappingURL=style.css.map */

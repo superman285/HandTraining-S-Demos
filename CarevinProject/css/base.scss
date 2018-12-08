@@ -1,0 +1,251 @@
+@charset "UTF-8";
+/*css reset*/
+body,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,input,p,th,td{
+  margin:0;
+  padding:0;
+  font-size: 14px;
+  font-family:"apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif";
+  /*color:#666560;*/
+}
+header,footer,article,aside,section,nav,menu,hgroup,details,dialog,figure,figcaption{
+  display:block
+}
+ol,li,ul,dl,dt,dd{
+  list-style:none;
+}
+a{
+  text-decoration:none;
+  color: var(--font-lightgrey);
+}
+
+/*设置边框盒模型*/
+/**,*::before,*::after {
+    box-sizing: border-box;
+}*/
+
+input,img,button{
+  border:none;
+  outline:none;
+  vertical-align: middle;
+  padding:0;
+}
+table{
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+
+
+/*小于这个屏幕尺寸*/
+@media screen and (max-width:375px){
+
+}
+
+
+/*通用*/
+/*layout布局*/
+.container {
+  display: flex;
+  align-items: center;
+}
+.col-1 { flex: 8.333333%; }
+.col-2 { flex: 16.666667%; }
+.col-3 { flex: 25%; }
+.col-4 { flex: 33.333333%; }
+.col-5 { flex: 41.666667%; }
+.col-6 { flex: 50%; }
+.col-7 { flex: 58.333333%; }
+.col-8 { flex: 66.666667%; }
+.col-9 { flex: 75%; }
+.col-10 { flex: 83.333333%; }
+.col-11 { flex: 91.666667%; }
+.col-12 { flex: 100%; }
+
+/*colormark色标*/
+:root {
+  /*background color*/
+  --bg-white: #fff;
+  --bg-grey: #555;
+  --bg-darkgreen: #56973F;
+  /*header footer font color*/
+  --font-white: #fff;
+  --font-lightgrey: #DDD;
+  --font-darkgrey: #707070;
+  /*content text-color*/
+  --text-darkblack: #010040;
+  --text-lightblack: #626366;
+  /*other main foreground color*/
+  --foreground-orange: #F1A943;
+  --foreground-redpink: #E64967;
+  --foreground-deeppink: #E93398;
+  --foreground-green: #93C241;
+  --foreground-cyan: #51B0A3;
+  --foreground-purple: #736EC5;
+
+}
+
+/*header模块*/
+.siteheader {
+  box-shadow: 0 0 5px 1px grey;
+}
+.top-nav-wrap {
+  background-color: var(--bg-grey);
+}
+.top-nav {
+  display: flex;
+  align-items: center;
+  height: 35px;
+  font-size: 1em;
+  background-color: var(--bg-grey);
+}
+.top-nav a:nth-child(3) {
+  margin-left: auto;
+}
+.top-nav a:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  height: 90px;
+}
+.main-nav>div a {
+  display: block;
+  padding: 1rem .5rem;
+  font-size: 1.15rem;
+  color: var(--font-darkgrey);
+
+}
+.main-nav>div {
+  margin-left: 2rem;
+}
+.logo {
+  margin-right: auto;
+}
+
+/*top-banner模块*/
+@mixin tbmodule($url,$color) {
+
+    position: relative;
+    height: 180px;
+    border-top: 1px solid transparent;
+    //background-image: url("../img/texture-dark.png");
+    background-image: url($url);
+    h1 {
+      margin-top: 4rem;
+      color: #fff;
+      font-family: "Menlo";
+      font-size: 3rem;
+      text-align: center;
+    }
+
+  .topbanner-box {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 580px;
+    height: 50px;
+    padding: .5rem 1rem;
+    transform: translate(-50%, 50%);
+    border: 3px solid $color;
+    background-color: #fff;
+    font-size: 1.5rem;
+    color: $color;
+  }
+}
+.tbgreen {
+  @include tbmodule("../img/texture-dark.png",var(--foreground-green));
+}
+.tborange {
+  @include tbmodule("../img/texture-yellow.png",var(--foreground-orange));
+}
+.tbcyan {
+  @include tbmodule("../img/texture.png",var(--foreground-cyan));
+}
+
+
+
+
+/*footer模块*/
+.footer-design {
+  height: 40px;
+  background-image: url('../img/footer-green.png');
+}
+.footer-info {
+  height: 250px;
+  padding-top: 50px;
+  color: var(--font-white);
+  text-align: center;
+  background-color: var(--bg-darkgreen);
+  p {
+    font-size: 1em;
+    margin-top: 1em;
+  }
+  hr {
+    width: 40%;
+    margin-top: 1em;
+  }
+}
+.sns-box {
+  margin-top: 1em;
+  a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background: #345;
+    opacity: .75;
+  }
+  i {
+    line-height: 30px;
+  }
+
+}
+
+
+/*size*/
+html {
+  min-width: 1200px;
+}
+
+/*版心*/
+.w{
+  width: 80%;
+  min-width: 1120px;
+  margin: 0 auto;
+}
+
+/*粗体*/
+.bold{
+  font-weight: bold;
+}
+
+/*清除浮动,给父元素设置，after是父元素的最后那儿加*/
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  line-height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix{
+  zoom: 1;
+}
+
+/*左浮动*/
+.fl{
+  float:left;
+}
+/*右浮动*/
+.fr{
+  float:right;
+}
+
+/*边框和padding不影响实际大小*/
+.border-box{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}

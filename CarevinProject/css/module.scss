@@ -1,7 +1,183 @@
 /*center banner模块*/
-
 .center-banner {
   height: 260px;
   margin: 50px 0;
   background: url("../img/texture.png");
+  text-align: center;
+  overflow: hidden;
+  h1 {
+    font-size: 2.2em;
+    font-family: "Helvetica";
+    font-weight: 300;
+    &:first-child {
+      margin-top: 2em;
+      color: var(--text-darkblack);
+    }
+    &:nth-child(2) {
+      color: var(--text-white);
+    }
+  }
+
+  button {
+    padding: .8rem;
+    margin-top: .5rem;
+    font-size: 1.2rem;
+    color: var(--text-lightblack);
+    border: 2px solid var(--text-darkblack);
+    background-color: var(--foreground-orange);
+    cursor: pointer;
+  }
+}
+
+/*child welcome模块*/
+.child-welcome {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 485px;
+}
+.child-welcome-content {
+  flex: .54;
+
+  h1 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    &:nth-child(2){
+      margin-bottom: 1rem;
+      color: var(--foreground-orange);
+    }
+  }
+  p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: var(--text-lightblack);
+  }
+  button {
+    padding: .5rem;
+    font-size: 1rem;
+    color: var(--text-white);
+    background-color: var(--foreground-deeppink);
+  }
+}
+.child-welcome-img {
+  flex: .36;
+  img {
+    width: 400px;
+    height: 300px;
+  }
+}
+
+/*index 头部轮播*/
+.top-slide-wrap {
+  height: 560px;
+  background-image: url("../img/texture-yellow.png");
+}
+.top-slide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.topslide-l {
+  flex: 0.5;
+
+  p {
+    color: var(--text-white);
+    font-size: 2em;
+  }
+  button {
+    padding: .5rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+    border-radius: 3px;
+    color: var(--text-white);
+    background-color: var(--foreground-purple);
+  }
+}
+
+.topslide-r {
+  flex: 0.4;
+  img {
+    border-radius: 600px 340px 340px 600px / 600px 550px 550px 600px;
+    box-shadow: 5px 15px 0 -3px rgba(0,0,0,.4);
+  }
+}
+
+/*index Features*/
+.features-title {
+  text-align: center;
+  span {
+    font-size: 2.2rem;
+    font-weight: 400;
+    &:nth-child(1){
+      color: var(--text-darkblack);
+    }
+    &:nth-child(2) {
+      color: var(--foreground-green);
+    }
+  }
+  p {
+    color: var(--text-lightblack);
+  }
+}
+.features-cards {
+  display: grid;
+  margin-top: 2rem;
+  grid-template-rows: repeat(3,1fr);
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 2rem;
+}
+
+.fcard {
+  height: 240px;
+  padding: 2rem 2rem;
+
+  border-radius: 4px;
+  h1 {
+    font-size: 1.5rem;
+    line-height: 2;
+
+  }
+  p{
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  &:nth-child(1){
+    border: 1px solid var(--foreground-orange);
+    h1 {
+      color: var(--foreground-orange);
+    }
+  }
+  &:nth-child(2){
+    border: 1px solid var(--foreground-redpink);
+    h1 {
+      color: var(--foreground-redpink);
+    }
+  }
+  &:nth-child(3){
+    border: 1px solid var(--foreground-purple);
+    h1 {
+      color: var(--foreground-purple);
+    }
+  }
+  &:nth-child(4){
+    border: 1px solid var(--foreground-cyan);
+    h1 {
+      color: var(--foreground-cyan);
+    }
+  }
+  &:nth-child(5){
+    border: 1px solid var(--foreground-green);
+    h1 {
+      color: var(--foreground-green);
+    }
+  }
+  &:nth-child(6){
+    border: 1px solid var(--foreground-deeppink);
+    h1 {
+      color: var(--foreground-deeppink);
+    }
+  }
 }

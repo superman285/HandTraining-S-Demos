@@ -9,8 +9,8 @@ ol, li, ul, dl, dt, dd { list-style: none; }
 a { text-decoration: none; color: var(--font-lightgrey); }
 
 /*设置边框盒模型*/
-/**,*::before,*::after { box-sizing: border-box;
-}*/
+*, *::before, *::after { box-sizing: border-box; }
+
 input, img, button { border: none; outline: none; vertical-align: middle; padding: 0; }
 
 table { border-collapse: collapse; border-spacing: 0; }
@@ -45,7 +45,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 .col-12 { flex: 100%; }
 
 /*colormark色标*/
-:root { /*background color*/ --bg-white: #fff; --bg-grey: #555; --bg-darkgreen: #56973F; /*header footer font color*/ --font-white: #fff; --font-lightgrey: #DDD; --font-darkgrey: #707070; /*content text-color*/ --text-darkblack: #010040; --text-lightblack: #626366; /*other main foreground color*/ --foreground-orange: #F1A943; --foreground-redpink: #E64967; --foreground-deeppink: #E93398; --foreground-green: #93C241; --foreground-cyan: #51B0A3; --foreground-purple: #736EC5; }
+:root { /*background color*/ --bg-white: #fff; --bg-grey: #555; --bg-darkgreen: #56973F; /*header footer font color*/ --font-white: #fff; --font-lightgrey: #DDD; --font-darkgrey: #707070; /*content text-color*/ --text-white: #FAFAFA; --text-darkblack: #010040; --text-lightblack: #626366; /*other main foreground color*/ --foreground-orange: #F1A943; --foreground-redpink: #E64967; --foreground-deeppink: #E93398; --foreground-green: #93C241; --foreground-cyan: #51B0A3; --foreground-purple: #736EC5; }
 
 /*header模块*/
 .siteheader { box-shadow: 0 0 5px 1px grey; }
@@ -80,7 +80,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 .tbcyan .topbanner-box { position: absolute; bottom: 0; left: 50%; width: 580px; height: 50px; padding: .5rem 1rem; transform: translate(-50%, 50%); border: 3px solid var(--foreground-cyan); background-color: #fff; font-size: 1.5rem; color: var(--foreground-cyan); }
 
 /*footer模块*/
-.footer-design { height: 40px; background-image: url("../img/footer-green.png"); }
+.footer-design { height: 40px; margin-top: 50px; background-image: url("../img/footer-green.png"); }
 
 .footer-info { height: 250px; padding-top: 50px; color: var(--font-white); text-align: center; background-color: var(--bg-darkgreen); }
 .footer-info p { font-size: 1em; margin-top: 1em; }

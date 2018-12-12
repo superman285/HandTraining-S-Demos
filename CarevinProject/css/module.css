@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*center banner模块*/
-.center-banner { height: 260px; margin: 50px 0; background: url("../img/texture.png"); text-align: center; overflow: hidden; }
+.center-banner { height: 260px; background: url("../img/texture.png"); text-align: center; overflow: hidden; }
 .center-banner h1 { font-size: 2.2em; font-family: "Helvetica"; font-weight: 300; }
 .center-banner h1:first-child { margin-top: 2em; color: var(--text-darkblack); }
 .center-banner h1:nth-child(2) { color: var(--text-white); }
@@ -31,13 +31,13 @@
 .topslide-r img { border-radius: 600px 340px 340px 600px / 600px 550px 550px 600px; box-shadow: 5px 15px 0 -3px rgba(0, 0, 0, 0.4); }
 
 /*index Features*/
-.features-title { text-align: center; }
+.features-title { margin-top: 2rem; text-align: center; }
 .features-title span { font-size: 2.2rem; font-weight: 400; }
 .features-title span:nth-child(1) { color: var(--text-darkblack); }
 .features-title span:nth-child(2) { color: var(--foreground-green); }
 .features-title p { color: var(--text-lightblack); }
 
-.features-cards { display: grid; margin-top: 2rem; grid-template-rows: repeat(3, 1fr); grid-template-columns: repeat(3, 1fr); grid-gap: 2rem; }
+.features-cards { display: grid; margin-top: 2rem; grid-template-rows: repeat(2, 1fr); grid-template-columns: repeat(3, 1fr); grid-gap: 2rem; }
 
 .fcard { height: 240px; padding: 2rem 2rem; border-radius: 4px; }
 .fcard h1 { font-size: 1.5rem; line-height: 2; }
@@ -54,5 +54,35 @@
 .fcard:nth-child(5) h1 { color: var(--foreground-green); }
 .fcard:nth-child(6) { border: 1px solid var(--foreground-deeppink); }
 .fcard:nth-child(6) h1 { color: var(--foreground-deeppink); }
+
+/*index parent-reviews*/
+.parent-reviews { height: 600px; margin-top: 4rem; padding: 4rem; background-image: url(../img/texture-yellow.png); text-align: center; }
+.parent-reviews h1 { font-size: 2.5rem; font-weight: 400; color: var(--text-white); }
+.parent-reviews h2 { font-size: 1.2rem; font-weight: 300; margin-top: .5rem; }
+.parent-reviews div { display: inline-block; margin-top: 4rem; margin-right: 1rem; }
+.parent-reviews div img { width: 150px; height: 150px; padding: 4px; border: 1px solid var(--bg-white); border-radius: 50%; }
+.parent-reviews p { margin-top: 3rem; padding: 0rem 16rem; line-height: 1.6; font-size: .95rem; text-align: left; }
+
+/*index LastestNews*/
+.latestnews { margin-top: 3rem; text-align: center; }
+.latestnews h1 { font-size: 2.5rem; }
+.latestnews h1 span:first-child { font-weight: 300; }
+.latestnews h1 span:last-child { font-weight: 400; color: var(--foreground-cyan); }
+.latestnews p { margin-top: 1rem; }
+
+.news-flex { display: flex; justify-content: space-between; margin-top: 2rem; }
+.news-flex > div { flex: 0.3; }
+.news-flex > div.flex-tips { position: relative; border: 1px solid var(--foreground-green); border-bottom: 5px solid var(--foreground-green); }
+.news-flex > div.flex-tips .label { position: absolute; top: 1rem; padding: .6rem; color: var(--text-white); background: var(--foreground-green); }
+.news-flex > div.flex-query { position: relative; border: 1px solid var(--foreground-deeppink); border-bottom: 5px solid var(--foreground-deeppink); }
+.news-flex > div.flex-query .label { position: absolute; top: 1rem; padding: .6rem; color: var(--text-white); background: var(--foreground-deeppink); }
+.news-flex > div.flex-general { position: relative; border: 1px solid var(--foreground-purple); border-bottom: 5px solid var(--foreground-purple); }
+.news-flex > div.flex-general .label { position: absolute; top: 1rem; padding: .6rem; color: var(--text-white); background: var(--foreground-purple); }
+.news-flex h1 { padding: 1rem 1rem 0; font-size: 1.5rem; text-align: left; }
+.news-flex p { padding: 0 1rem 1rem; line-height: 1.5; font-size: 1rem; text-align: left; }
+.news-flex .fphoto { padding-top: 64%; }
+.news-flex .fphoto.ftip { background: url("../img/blog1.jpg"); background-size: cover; }
+.news-flex .fphoto.fquery { background: url("../img/blog2.jpg"); background-size: cover; }
+.news-flex .fphoto.fgeneral { background: url("../img/blog3.jpg"); background-size: cover; }
 
 /*# sourceMappingURL=module.css.map */

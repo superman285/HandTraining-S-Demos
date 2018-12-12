@@ -137,14 +137,13 @@ table {
   height: 35px;
   font-size: 1em;
   background-color: var(--bg-grey);
-}
+  a:nth-child(3) {
+    margin-left: auto;
+  }
+  a:not(:last-child) {
+    margin-right: 1.5rem;
+  }
 
-.top-nav a:nth-child(3) {
-  margin-left: auto;
-}
-
-.top-nav a:not(:last-child) {
-  margin-right: 1.5rem;
 }
 
 .main-nav {
@@ -158,7 +157,21 @@ table {
   padding: 1rem .5rem;
   font-size: 1.15rem;
   color: var(--font-darkgrey);
-
+  transition: all .2s linear;
+  border: 2px solid transparent;
+  &.active {
+    color: var(--foreground-green);
+    border: 2px solid var(--foreground-green);
+  }
+  &:hover {
+    color: var(--foreground-green);
+  }
+}
+.main-nav .facility a {
+  padding: 1rem 1.5rem 1rem 2.5rem;
+  color: var(--text-white);
+  border-radius: 2rem;
+  background: url(../img/mother.png) no-repeat 12px,linear-gradient(45deg,#7B7FDC,#7159AD);
 }
 
 .main-nav > div {
@@ -168,6 +181,41 @@ table {
 .logo {
   margin-right: auto;
 }
+
+.pages {
+  position: relative;
+
+  &:hover {
+    .main-submenu {
+      opacity: 1;
+      height: 131px;
+    }
+  }
+}
+.main-submenu {
+  opacity: 0;
+  position: absolute;
+  left: .5rem;
+  height: 0;
+  overflow: hidden;
+  padding: 0 .7rem;
+  border-radius: 6px;
+  background: var(--bg-white);
+  box-shadow: 0 0 6px grey;
+  transition: all .2s linear;
+  li {
+    padding: .5rem .5rem;
+    white-space: nowrap;
+    cursor: pointer;
+    &:not(:last-child){
+      border-bottom: 1px solid rgba(0,0,0,.2);
+    }
+    &:hover {
+      color: var(--foreground-green);
+    }
+  }
+}
+
 
 /*top-banner模块*/
 @mixin tbmodule($url,$color) {
@@ -249,6 +297,25 @@ table {
   }
 
 }
+
+
+/*跳转顶部*/
+.turnTop {
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  top: 92%;
+  left: 100%;
+  width: 60px;
+  height: 50px;
+  background: var(--bg-white);
+  box-shadow: 2px 4px 10px grey;
+
+
+}
+
 
 /*size*/
 html {

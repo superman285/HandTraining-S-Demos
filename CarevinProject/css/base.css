@@ -53,18 +53,28 @@ table { border-collapse: collapse; border-spacing: 0; }
 .top-nav-wrap { background-color: var(--bg-grey); }
 
 .top-nav { display: flex; align-items: center; height: 35px; font-size: 1em; background-color: var(--bg-grey); }
-
 .top-nav a:nth-child(3) { margin-left: auto; }
-
 .top-nav a:not(:last-child) { margin-right: 1.5rem; }
 
 .main-nav { display: flex; align-items: center; height: 90px; }
 
-.main-nav > div a { display: block; padding: 1rem .5rem; font-size: 1.15rem; color: var(--font-darkgrey); }
+.main-nav > div a { display: block; padding: 1rem .5rem; font-size: 1.15rem; color: var(--font-darkgrey); transition: all .2s linear; border: 2px solid transparent; }
+.main-nav > div a.active { color: var(--foreground-green); border: 2px solid var(--foreground-green); }
+.main-nav > div a:hover { color: var(--foreground-green); }
+
+.main-nav .facility a { padding: 1rem 1.5rem 1rem 2.5rem; color: var(--text-white); border-radius: 2rem; background: url(../img/mother.png) no-repeat 12px, linear-gradient(45deg, #7B7FDC, #7159AD); }
 
 .main-nav > div { margin-left: 2rem; }
 
 .logo { margin-right: auto; }
+
+.pages { position: relative; }
+.pages:hover .main-submenu { opacity: 1; height: 131px; }
+
+.main-submenu { opacity: 0; position: absolute; left: .5rem; height: 0; overflow: hidden; padding: 0 .7rem; border-radius: 6px; background: var(--bg-white); box-shadow: 0 0 6px grey; transition: all .2s linear; }
+.main-submenu li { padding: .5rem .5rem; white-space: nowrap; cursor: pointer; }
+.main-submenu li:not(:last-child) { border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+.main-submenu li:hover { color: var(--foreground-green); }
 
 /*top-banner模块*/
 .tbgreen { position: relative; height: 180px; border-top: 1px solid transparent; background-image: url("../img/texture-dark.png"); }
@@ -89,6 +99,9 @@ table { border-collapse: collapse; border-spacing: 0; }
 .sns-box { margin-top: 1em; }
 .sns-box a { display: inline-block; width: 30px; height: 30px; border-radius: 15px; background: #345; opacity: .75; }
 .sns-box i { line-height: 30px; }
+
+/*跳转顶部*/
+.turnTop { position: sticky; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; top: 92%; left: 100%; width: 60px; height: 50px; background: var(--bg-white); box-shadow: 2px 4px 10px grey; }
 
 /*size*/
 html { min-width: 1200px; }

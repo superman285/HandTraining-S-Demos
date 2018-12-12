@@ -1,7 +1,6 @@
 /*center banner模块*/
 .center-banner {
   height: 260px;
-  margin: 50px 0;
   background: url("../img/texture.png");
   text-align: center;
   overflow: hidden;
@@ -107,6 +106,7 @@
 
 /*index Features*/
 .features-title {
+  margin-top: 2rem;
   text-align: center;
   span {
     font-size: 2.2rem;
@@ -125,7 +125,7 @@
 .features-cards {
   display: grid;
   margin-top: 2rem;
-  grid-template-rows: repeat(3,1fr);
+  grid-template-rows: repeat(2,1fr);
   grid-template-columns: repeat(3,1fr);
   grid-gap: 2rem;
 }
@@ -133,12 +133,10 @@
 .fcard {
   height: 240px;
   padding: 2rem 2rem;
-
   border-radius: 4px;
   h1 {
     font-size: 1.5rem;
     line-height: 2;
-
   }
   p{
     font-size: 1rem;
@@ -179,5 +177,126 @@
     h1 {
       color: var(--foreground-deeppink);
     }
+  }
+}
+
+/*index parent-reviews*/
+.parent-reviews {
+  height: 600px;
+  margin-top: 4rem;
+  padding: 4rem;
+  background-image: url(../img/texture-yellow.png);
+  text-align: center;
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--text-white);
+  }
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: .5rem;
+  }
+  div {
+    display: inline-block;
+    margin-top: 4rem;
+    margin-right: 1rem;
+    img{
+      width: 150px;
+      height: 150px;
+      padding: 4px;
+      border: 1px solid var(--bg-white);
+      border-radius: 50%;
+    }
+  }
+  p {
+    margin-top: 3rem;
+    padding: 0rem 16rem;
+    line-height: 1.6;
+    font-size: .95rem;
+    text-align: left;
+  }
+}
+
+/*index LastestNews*/
+.latestnews {
+  margin-top: 3rem;
+  text-align: center;
+  h1 {
+    font-size: 2.5rem;
+
+    span:first-child {
+      font-weight: 300;
+    }
+    span:last-child {
+      font-weight: 400;
+      color: var(--foreground-cyan);
+    }
+  }
+  p{
+    margin-top: 1rem;
+  }
+}
+
+@mixin flexblock($color) {
+
+  position: relative;
+  border: 1px solid $color;
+  border-bottom: 5px solid $color;
+  .label {
+    position: absolute;
+    top: 1rem;
+    padding: .6rem;
+    color: var(--text-white);
+    background: $color;
+  }
+}
+
+.news-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  &>div {
+    flex: 0.3;
+    &.flex-tips {
+      @include flexblock(var(--foreground-green));
+    }
+    &.flex-query {
+      @include flexblock(var(--foreground-deeppink));
+    }
+    &.flex-general {
+      @include flexblock(var(--foreground-purple));
+    }
+  }
+  h1 {
+    padding: 1rem 1rem 0;
+    font-size: 1.5rem;
+    text-align: left;
+  }
+  p {
+    padding: 0 1rem 1rem;
+    line-height: 1.5;
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .fphoto {
+    padding-top: 64%;
+    &.ftip {
+      background: url("../img/blog1.jpg");
+      background-size: cover;
+
+    }
+    &.fquery {
+      background: url("../img/blog2.jpg");
+      background-size: cover;
+
+    }
+    &.fgeneral {
+      background: url("../img/blog3.jpg");
+      background-size: cover;
+
+    }
+
   }
 }

@@ -68,10 +68,16 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 .logo { margin-right: auto; }
 
-.pages { position: relative; }
-.pages:hover .main-submenu { opacity: 1; height: 131px; }
+.pages { position: relative; /*&:hover { .main-submenu { opacity: 1; height: 131px; }
+}*/ }
+.pages .down-arrow.click { animation: arrowplay .5s ease-in-out; }
 
-.main-submenu { opacity: 0; position: absolute; left: .5rem; height: 0; overflow: hidden; padding: 0 .7rem; border-radius: 6px; background: var(--bg-white); box-shadow: 0 0 6px grey; transition: all .2s linear; }
+@keyframes arrowplay { 0% { transform: translate(0, 0); }
+  25% { transform: translate(0, -20px); }
+  50% { transform: translate(0, 0); }
+  75% { transform: translate(0, -20px); }
+  100% { transform: translate(0, 0); } }
+.main-submenu { display: none; opacity: 1; position: absolute; left: .5rem; height: auto; padding: 0 .7rem; border-radius: 6px; background: var(--bg-white); box-shadow: 0 0 6px grey; transition: all .2s linear; }
 .main-submenu li { padding: .5rem .5rem; white-space: nowrap; cursor: pointer; }
 .main-submenu li:not(:last-child) { border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
 .main-submenu li:hover { color: var(--foreground-green); }

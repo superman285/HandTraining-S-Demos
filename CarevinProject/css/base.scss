@@ -185,19 +185,43 @@ table {
 .pages {
   position: relative;
 
-  &:hover {
+  .down-arrow {
+    //transition: all .4s linear;
+    //visibility: hidden;
+    //transform: translate(0,0);
+    &.click {
+      //visibility: visible;
+      //transform: translate(0,0);
+      animation:  arrowplay .5s ease-in-out;
+    }
+  }
+  /*&:hover {
     .main-submenu {
       opacity: 1;
       height: 131px;
     }
+  }*/
+}
+
+@keyframes arrowplay {
+  0% {      transform: translate(0,0);
+  }
+  25% {    transform: translate(0,-20px);
+  }
+  50% {      transform: translate(0,0);
+  }
+  75% {    transform: translate(0,-20px);
+  }
+  100% {      transform: translate(0,0);
   }
 }
+
 .main-submenu {
-  opacity: 0;
+  display: none;
+  opacity: 1;
   position: absolute;
   left: .5rem;
-  height: 0;
-  overflow: hidden;
+  height: auto;
   padding: 0 .7rem;
   border-radius: 6px;
   background: var(--bg-white);

@@ -355,10 +355,10 @@
 
   .fphoto {
     padding-top: 64%;
+    transition: all .3s linear;
     &.ftip {
       background: url("../img/blog1.jpg");
       background-size: cover;
-
     }
     &.fquery {
       background: url("../img/blog2.jpg");
@@ -368,7 +368,10 @@
     &.fgeneral {
       background: url("../img/blog3.jpg");
       background-size: cover;
-
+    }
+    &:hover {
+      transform: scale(1.02) translateY(1px);
+      box-shadow: 0 0 10px grey;
     }
 
   }

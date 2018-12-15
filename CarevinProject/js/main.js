@@ -44,3 +44,28 @@ let mySwiper2 = new Swiper ('.swiper-container.parent-reviews', {
     },
 });
 
+/*动画效果*/
+let fcards = $(".fcard");
+for (let i = 0; i < fcards.length; i++) {
+    fcards.eq(i).hover(()=>{
+        console.log(this);
+        fcards.eq(i).toggleClass("animated bounce")})
+}
+
+let index_labels = $('.label'),
+    fphotos = $('.fphoto');
+for (let i = 0; i < fphotos.length; i++) {
+    fphotos.eq(i).hover(()=>{
+        index_labels.eq(i).toggleClass("animated rubberBand")})
+}
+
+let contactus_btn = $('.center-banner button');
+let center_banner = $('.center-banner');
+center_banner.hover(()=>{
+    contactus_btn.toggleClass('animated tada')
+});
+
+let facility_btn = $('.facility');
+facility_btn.hover(()=>{
+   facility_btn.toggleClass('animated shake')
+});

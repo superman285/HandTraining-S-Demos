@@ -95,10 +95,11 @@
 .news-flex > div.flex-general .label { position: absolute; top: 1rem; padding: .6rem; color: var(--text-white); background: var(--foreground-purple); }
 .news-flex h1 { padding: 1rem 1rem 0; font-size: 1.5rem; text-align: left; }
 .news-flex p { padding: 0 1rem 1rem; line-height: 1.5; font-size: 1rem; text-align: left; }
-.news-flex .fphoto { padding-top: 64%; }
+.news-flex .fphoto { padding-top: 64%; transition: all .3s linear; }
 .news-flex .fphoto.ftip { background: url("../img/blog1.jpg"); background-size: cover; }
 .news-flex .fphoto.fquery { background: url("../img/blog2.jpg"); background-size: cover; }
 .news-flex .fphoto.fgeneral { background: url("../img/blog3.jpg"); background-size: cover; }
+.news-flex .fphoto:hover { transform: scale(1.02) translateY(1px); box-shadow: 0 0 10px grey; }
 
 /*contact mapAPI模块*/
 .map-container { display: flex; justify-content: space-between; margin-top: 4rem !important; }

@@ -48,7 +48,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 :root { /*background color*/ --bg-white: #fff; --bg-grey: #555; --bg-darkgreen: #56973F; /*header footer font color*/ --font-white: #fff; --font-lightgrey: #DDD; --font-darkgrey: #707070; /*content text-color*/ --text-white: #FAFAFA; --text-darkblack: #010040; --text-lightblack: #626366; /*other main foreground color*/ --foreground-orange: #F1A943; --foreground-redpink: #E64967; --foreground-deeppink: #E93398; --foreground-green: #93C241; --foreground-cyan: #51B0A3; --foreground-purple: #736EC5; }
 
 /*header模块*/
-.siteheader { box-shadow: 0 0 5px 1px grey; }
+.siteheader { box-shadow: 0 0 5px 1px grey; position: relative; z-index: 2; }
 
 .top-nav-wrap { background-color: var(--bg-grey); }
 
@@ -113,7 +113,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 html { min-width: 1200px; }
 
 /*版心*/
-.w { width: 80%; min-width: 1120px; margin: 0 auto; }
+.w { width: 80% !important; min-width: 1120px !important; margin: 0 auto !important; }
 
 /*粗体*/
 .bold { font-weight: bold; }

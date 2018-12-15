@@ -71,13 +71,56 @@
 .top-slide-wrap {
   height: 560px;
   background-image: url("../img/texture-yellow.png");
+  .swiper-wrapper {
+    min-width: 1200px;
+    width: 80%!important;
+    margin: 0 auto!important;
+  }
+
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: #fff;
+  }
+  .swiper-pagination-bullet-active{
+    width: 18px;
+    border-radius: 6px;
+  }
 }
+
 .top-slide {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   height: 100%;
+
 }
+
+@keyframes slide-img {
+  from{
+    opacity:.1;}
+  to{
+    opacity: 1;}
+}
+@keyframes slide-p{
+  from{transform:translate(-100%)}
+  to{transform:translateY(0)}
+}
+@keyframes slide-button{
+  from{transform:translateY(200%)}
+  to{transform:translate(0)}
+}
+
+.swiper-slide-active {
+  p {
+    animation: slide-p .5s linear;
+  }
+  button {
+    animation: slide-button .75s linear;
+  }
+}
+
+
 
 .topslide-l {
   flex: 0.5;
@@ -95,13 +138,13 @@
     background-color: var(--foreground-purple);
   }
 }
-
 .topslide-r {
   flex: 0.4;
   img {
     border-radius: 600px 340px 340px 600px / 600px 550px 550px 600px;
     box-shadow: 5px 15px 0 -3px rgba(0,0,0,.4);
   }
+  animation: slide-img 1s linear;
 }
 
 /*index Features*/
@@ -182,9 +225,10 @@
 
 /*index parent-reviews*/
 .parent-reviews {
+  position: relative;
   height: 600px;
   margin-top: 4rem;
-  padding: 4rem;
+  padding: 1rem;
   background-image: url(../img/texture-yellow.png);
   text-align: center;
   h1 {
@@ -198,8 +242,7 @@
     margin-top: .5rem;
   }
   div {
-    display: inline-block;
-    margin-top: 4rem;
+    margin-top: .5rem;
     margin-right: 1rem;
     img{
       width: 150px;
@@ -216,11 +259,26 @@
     font-size: .95rem;
     text-align: left;
   }
+
+  .swiper-pagination {
+    position: absolute;
+    left: 16rem;
+    top: 4rem;
+    .swiper-pagination-bullet {
+      width: 20px;
+      height: 12px;
+      background: black;
+      border-radius: 0;
+    }
+    .swiper-pagination-bullet-active{
+      width: 30px;
+    }
+  }
 }
 
 /*index LastestNews*/
 .latestnews {
-  margin-top: 3rem;
+  margin-top: 3rem!important;
   text-align: center;
   h1 {
     font-size: 2.5rem;

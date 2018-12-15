@@ -125,6 +125,8 @@ table {
 /*header模块*/
 .siteheader {
   box-shadow: 0 0 5px 1px grey;
+  position: relative;
+  z-index: 2;
 }
 
 .top-nav-wrap {
@@ -348,9 +350,9 @@ html {
 
 /*版心*/
 .w {
-  width: 80%;
-  min-width: 1120px;
-  margin: 0 auto;
+  width: 80%!important;
+  min-width: 1120px!important;
+  margin: 0 auto!important;
 }
 
 /*粗体*/

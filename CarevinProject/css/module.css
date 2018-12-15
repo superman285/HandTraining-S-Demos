@@ -117,4 +117,8 @@
 .enquiry .message textarea { height: 4rem; border: none; outline: none; border-bottom: 2px solid var(--foreground-green); resize: none; }
 .enquiry button { width: 6rem; padding: .5rem; font-size: 1.1rem; color: var(--font-white); background: var(--foreground-cyan); }
 
+/*contact bottom-info*/
+.bottom-info { margin-top: 3rem !important; display: flex; justify-content: space-between; }
+.bottom-info div { flex: .3; }
+
 /*# sourceMappingURL=module.css.map */

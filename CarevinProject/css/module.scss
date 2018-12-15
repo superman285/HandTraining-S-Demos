@@ -449,3 +449,12 @@
 
 }
 
+/*contact bottom-info*/
+.bottom-info {
+  margin-top: 3rem!important;
+  display: flex;
+justify-content: space-between;
+  div {
+    flex: .3;
+  }
+}

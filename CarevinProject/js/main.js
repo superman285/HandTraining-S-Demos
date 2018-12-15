@@ -43,3 +43,4 @@ let mySwiper2 = new Swiper ('.swiper-container.parent-reviews', {
         clickable: 'true'
     },
 });
+

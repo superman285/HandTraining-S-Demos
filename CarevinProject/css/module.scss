@@ -1,6 +1,7 @@
 /*center banner模块*/
 .center-banner {
   height: 260px;
+  margin-top: 3rem;
   background: url("../img/texture.png");
   text-align: center;
   overflow: hidden;
@@ -35,13 +36,14 @@
   align-items: center;
   height: 485px;
 }
+
 .child-welcome-content {
   flex: .54;
 
   h1 {
     font-size: 2.2rem;
     font-weight: 500;
-    &:nth-child(2){
+    &:nth-child(2) {
       margin-bottom: 1rem;
       color: var(--foreground-orange);
     }
@@ -59,6 +61,7 @@
     background-color: var(--foreground-deeppink);
   }
 }
+
 .child-welcome-img {
   flex: .36;
   img {
@@ -73,8 +76,8 @@
   background-image: url("../img/texture-yellow.png");
   .swiper-wrapper {
     min-width: 1200px;
-    width: 80%!important;
-    margin: 0 auto!important;
+    width: 80% !important;
+    margin: 0 auto !important;
   }
 
   .swiper-pagination-bullet {
@@ -82,7 +85,7 @@
     height: 12px;
     background: #fff;
   }
-  .swiper-pagination-bullet-active{
+  .swiper-pagination-bullet-active {
     width: 18px;
     border-radius: 6px;
   }
@@ -97,18 +100,30 @@
 }
 
 @keyframes slide-img {
-  from{
-    opacity:.1;}
-  to{
-    opacity: 1;}
+  from {
+    opacity: .1;
+  }
+  to {
+    opacity: 1;
+  }
 }
-@keyframes slide-p{
-  from{transform:translate(-100%)}
-  to{transform:translateY(0)}
+
+@keyframes slide-p {
+  from {
+    transform: translate(-100%)
+  }
+  to {
+    transform: translateY(0)
+  }
 }
-@keyframes slide-button{
-  from{transform:translateY(200%)}
-  to{transform:translate(0)}
+
+@keyframes slide-button {
+  from {
+    transform: translateY(200%)
+  }
+  to {
+    transform: translate(0)
+  }
 }
 
 .swiper-slide-active {
@@ -119,8 +134,6 @@
     animation: slide-button .75s linear;
   }
 }
-
-
 
 .topslide-l {
   flex: 0.5;
@@ -138,11 +151,12 @@
     background-color: var(--foreground-purple);
   }
 }
+
 .topslide-r {
   flex: 0.4;
   img {
     border-radius: 600px 340px 340px 600px / 600px 550px 550px 600px;
-    box-shadow: 5px 15px 0 -3px rgba(0,0,0,.4);
+    box-shadow: 5px 15px 0 -3px rgba(0, 0, 0, .4);
   }
   animation: slide-img 1s linear;
 }
@@ -154,7 +168,7 @@
   span {
     font-size: 2.2rem;
     font-weight: 400;
-    &:nth-child(1){
+    &:nth-child(1) {
       color: var(--text-darkblack);
     }
     &:nth-child(2) {
@@ -165,11 +179,12 @@
     color: var(--text-lightblack);
   }
 }
+
 .features-cards {
   display: grid;
   margin-top: 2rem;
-  grid-template-rows: repeat(2,1fr);
-  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
 }
 
@@ -181,41 +196,41 @@
     font-size: 1.5rem;
     line-height: 2;
   }
-  p{
+  p {
     font-size: 1rem;
     line-height: 1.5;
   }
-  &:nth-child(1){
+  &:nth-child(1) {
     border: 1px solid var(--foreground-orange);
     h1 {
       color: var(--foreground-orange);
     }
   }
-  &:nth-child(2){
+  &:nth-child(2) {
     border: 1px solid var(--foreground-redpink);
     h1 {
       color: var(--foreground-redpink);
     }
   }
-  &:nth-child(3){
+  &:nth-child(3) {
     border: 1px solid var(--foreground-purple);
     h1 {
       color: var(--foreground-purple);
     }
   }
-  &:nth-child(4){
+  &:nth-child(4) {
     border: 1px solid var(--foreground-cyan);
     h1 {
       color: var(--foreground-cyan);
     }
   }
-  &:nth-child(5){
+  &:nth-child(5) {
     border: 1px solid var(--foreground-green);
     h1 {
       color: var(--foreground-green);
     }
   }
-  &:nth-child(6){
+  &:nth-child(6) {
     border: 1px solid var(--foreground-deeppink);
     h1 {
       color: var(--foreground-deeppink);
@@ -244,7 +259,7 @@
   div {
     margin-top: .5rem;
     margin-right: 1rem;
-    img{
+    img {
       width: 150px;
       height: 150px;
       padding: 4px;
@@ -270,7 +285,7 @@
       background: black;
       border-radius: 0;
     }
-    .swiper-pagination-bullet-active{
+    .swiper-pagination-bullet-active {
       width: 30px;
     }
   }
@@ -278,7 +293,7 @@
 
 /*index LastestNews*/
 .latestnews {
-  margin-top: 3rem!important;
+  margin-top: 3rem !important;
   text-align: center;
   h1 {
     font-size: 2.5rem;
@@ -291,7 +306,7 @@
       color: var(--foreground-cyan);
     }
   }
-  p{
+  p {
     margin-top: 1rem;
   }
 }
@@ -314,7 +329,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
-  &>div {
+  & > div {
     flex: 0.3;
     &.flex-tips {
       @include flexblock(var(--foreground-green));
@@ -358,3 +373,79 @@
 
   }
 }
+
+/*contact mapAPI模块*/
+.map-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem !important;
+}
+
+#map-wrap {
+  flex: 0.64;
+  height: 30vw;
+  min-height: 400px;
+  box-shadow: 0 0 10px grey;
+}
+
+.enquiry {
+  flex: 0.32;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30vw;
+  min-height: 400px;
+
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  label {
+    font-size: 1.1rem;
+  }
+  input,textarea {
+    width: 100%;
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+  .name {
+    label {
+      color: var(--foreground-cyan);
+    }
+    input {
+      border-bottom: 2px solid var(--foreground-cyan);
+    }
+  }
+  .addr {
+    label {
+      color: var(--foreground-orange);
+    }
+    input {
+      border-bottom: 2px solid var(--foreground-orange);
+    }
+  }
+  .message {
+
+    label {
+      color: var(--foreground-green);
+    }
+    textarea {
+      height: 4rem;
+      border: none;
+      outline: none;
+      border-bottom: 2px solid var(--foreground-green);
+      resize: none;
+    }
+  }
+
+  button{
+    width: 6rem;
+    padding: .5rem;
+    font-size: 1.1rem;
+    color: var(--font-white);
+    background: var(--foreground-cyan);
+  }
+
+}
+

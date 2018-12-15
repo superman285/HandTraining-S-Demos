@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*center banner模块*/
-.center-banner { height: 260px; background: url("../img/texture.png"); text-align: center; overflow: hidden; }
+.center-banner { height: 260px; margin-top: 3rem; background: url("../img/texture.png"); text-align: center; overflow: hidden; }
 .center-banner h1 { font-size: 2.2em; font-family: "Helvetica"; font-weight: 300; }
 .center-banner h1:first-child { margin-top: 2em; color: var(--text-darkblack); }
 .center-banner h1:nth-child(2) { color: var(--text-white); }
@@ -99,5 +99,22 @@
 .news-flex .fphoto.ftip { background: url("../img/blog1.jpg"); background-size: cover; }
 .news-flex .fphoto.fquery { background: url("../img/blog2.jpg"); background-size: cover; }
 .news-flex .fphoto.fgeneral { background: url("../img/blog3.jpg"); background-size: cover; }
+
+/*contact mapAPI模块*/
+.map-container { display: flex; justify-content: space-between; margin-top: 4rem !important; }
+
+#map-wrap { flex: 0.64; height: 30vw; min-height: 400px; box-shadow: 0 0 10px grey; }
+
+.enquiry { flex: 0.32; display: flex; flex-direction: column; justify-content: space-between; height: 30vw; min-height: 400px; }
+.enquiry h1 { font-size: 2rem; text-align: center; }
+.enquiry label { font-size: 1.1rem; }
+.enquiry input, .enquiry textarea { width: 100%; margin-top: 1rem; font-size: 1rem; }
+.enquiry .name label { color: var(--foreground-cyan); }
+.enquiry .name input { border-bottom: 2px solid var(--foreground-cyan); }
+.enquiry .addr label { color: var(--foreground-orange); }
+.enquiry .addr input { border-bottom: 2px solid var(--foreground-orange); }
+.enquiry .message label { color: var(--foreground-green); }
+.enquiry .message textarea { height: 4rem; border: none; outline: none; border-bottom: 2px solid var(--foreground-green); resize: none; }
+.enquiry button { width: 6rem; padding: .5rem; font-size: 1.1rem; color: var(--font-white); background: var(--foreground-cyan); }
 
 /*# sourceMappingURL=module.css.map */

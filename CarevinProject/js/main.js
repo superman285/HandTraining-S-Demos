@@ -69,3 +69,11 @@ let facility_btn = $('.facility');
 facility_btn.hover(()=>{
    facility_btn.toggleClass('animated shake')
 });
+
+
+let staffbox = $(".staff-box");
+for (let i = 0; i < staffbox.length; i++) {
+    staffbox.eq(i).hover(()=>{
+        staffbox.eq(i).toggleClass('animated shake')
+    });
+}

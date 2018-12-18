@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*css reset*/
-body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, input, p, th, td { margin: 0; padding: 0; font-size: 14px; font-family: "apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif"; /*color:#666560;*/ }
+body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, input, p, th, td, figure, figcaption { margin: 0; padding: 0; font-size: 14px; font-family: "apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif"; /*color:#666560;*/ }
 
 header, footer, article, aside, section, nav, menu, hgroup, details, dialog, figure, figcaption { display: block; }
 
@@ -46,6 +46,19 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 /*colormark色标*/
 :root { /*background color*/ --bg-white: #fff; --bg-grey: #555; --bg-darkgreen: #56973F; /*header footer font color*/ --font-white: #fff; --font-lightgrey: #DDD; --font-darkgrey: #707070; /*content text-color*/ --text-white: #FAFAFA; --text-darkblack: #010040; --text-lightblack: #626366; /*other main foreground color*/ --foreground-orange: #F1A943; --foreground-redpink: #E64967; --foreground-deeppink: #E93398; --foreground-green: #93C241; --foreground-cyan: #51B0A3; --foreground-purple: #736EC5; }
+
+/*字色*/
+.orange { color: var(--foreground-orange); }
+
+.redpink { color: var(--foreground-redpink); }
+
+.deeppink { color: var(--foreground-deeppink); }
+
+.green { color: var(--foreground-green); }
+
+.cyan { color: var(--foreground-cyan); }
+
+.purple { color: var(--foreground-purple); }
 
 /*header模块*/
 .siteheader { box-shadow: 0 0 5px 1px grey; position: relative; z-index: 2; }

@@ -180,7 +180,6 @@
   }
 }
 
-
 .features-cards {
   display: grid;
   margin-top: 2rem;
@@ -312,10 +311,6 @@
   }
 }
 
-
-
-
-
 @mixin flexblock($color) {
 
   position: relative;
@@ -412,7 +407,7 @@
   label {
     font-size: 1.1rem;
   }
-  input,textarea {
+  input, textarea {
     width: 100%;
     margin-top: 1rem;
     font-size: 1rem;
@@ -447,7 +442,7 @@
     }
   }
 
-  button{
+  button {
     width: 6rem;
     padding: .5rem;
     font-size: 1.1rem;
@@ -459,9 +454,9 @@
 
 /*contact bottom-info*/
 .bottom-info {
-  margin-top: 3rem!important;
+  margin-top: 3rem !important;
   display: flex;
-justify-content: space-between;
+  justify-content: space-between;
   div {
     flex: .3;
   }
@@ -469,7 +464,7 @@ justify-content: space-between;
 
 /*classes cards*/
 .classes-cards-wrap {
-  margin-top: 2rem!important;
+  margin-top: 2rem !important;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -481,11 +476,12 @@ justify-content: space-between;
     min-height: 270px;
     box-shadow: 0 0 5px darkgrey;
     border-radius: 5px;
-    >div {
+    > div {
       display: inline-block;
     }
   }
 }
+
 .card-img {
   width: 33%;
   height: 100%;
@@ -503,6 +499,7 @@ justify-content: space-between;
     background: url("../img/png/four.png") no-repeat center;
   }
 }
+
 .card-content {
   margin-top: 2rem;
   width: 66%;
@@ -541,7 +538,6 @@ justify-content: space-between;
   }
 }
 
-
 /*our staff mod*/
 .ourstaff {
   margin-top: 3rem !important;
@@ -560,6 +556,7 @@ justify-content: space-between;
     margin-top: 1rem;
   }
 }
+
 .staff-wrap {
   margin-top: 2rem;
   display: flex;
@@ -611,6 +608,398 @@ justify-content: space-between;
     }
     &.sn4 {
       background: var(--foreground-cyan);
+    }
+  }
+}
+
+/*page404 content*/
+.content404-wrap {
+  margin-top: 4rem;
+  text-align: center;
+  p {
+    font-size: 1rem;
+  }
+  .img404 {
+    margin-top: 2rem;
+  }
+}
+
+/*blog-detail页*/
+.detail-content-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem !important;
+}
+
+.detail-content {
+  flex: 0.65;
+  h1 {
+    font-size: 1.8rem;
+    color: var(--foreground-purple);
+  }
+  .article-tags {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    height: 3rem;
+    border-top: 1px solid var(--font-lightgrey);
+    border-bottom: 1px solid var(--font-lightgrey);
+    .author-box {
+      padding: .2rem;
+      margin-right: auto;
+      color: var(--font-white);
+      background: var(--font-darkgrey);
+    }
+    .fa-calendar {
+      color: var(--foreground-cyan);
+    }
+  }
+
+  .article-text {
+    .article-text-img {
+      margin-top: 1rem;
+      min-height: 470px;
+      height: 33vw;
+      background: url(../img/blog1.jpg);
+      background-size: cover;
+    }
+
+    h2 {
+      font-weight: 700;
+      font-size: 1.5rem;
+      margin-top: 1rem;
+    }
+    p {
+      margin-top: 1rem;
+      color: var(--text-lightblack);
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  }
+
+  .article-arrows {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    height: 4rem;
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+    > div {
+      padding: .5rem;
+      font-size: 1.1rem;
+      color: var(--text-white);
+      background: var(--foreground-cyan);
+      cursor: pointer;
+    }
+  }
+}
+
+.detail-sidebar {
+  flex: 0.32;
+}
+
+/*blog与blog-detail通用sidebar区*/
+@mixin sidebar-card-title($color) {
+  margin-bottom: 2rem;
+  border: 1px solid $color;
+  figcaption {
+    padding: 1rem;
+    color: var(--font-white);
+    font-size: 1.3rem;
+    background: $color;
+  }
+}
+
+.sidebar-connected {
+  @include sidebar-card-title(var(--foreground-green));
+  div {
+    padding: 1rem;
+  }
+  i {
+    color: var(--font-darkgrey);
+    font-size: 1.2rem;
+    margin-right: 1rem;
+  }
+}
+
+.sidebar-posts {
+  @include sidebar-card-title(var(--foreground-cyan));
+  div {
+    padding: 1rem;
+
+    p:nth-child(2) {
+      margin-top: .5rem;
+      font-size: .75rem;
+      color: var(--text-lightblack);
+    }
+    &:not(:last-child) {
+      border-bottom: 1px solid var(--font-lightgrey);
+    }
+  }
+}
+
+.sidebar-treatment {
+  @include sidebar-card-title(var(--foreground-orange));
+  figcaption {
+    color: var(--text-lightblack);
+  }
+  div {
+    padding: 0 1rem 1rem;
+    background: var(--foreground-orange);
+  }
+  p {
+    line-height: 1.5;
+    color: var(--text-white);
+  }
+  button {
+    margin-top: 1rem;
+    padding: .4rem .6rem;
+    color: var(--text-white);
+    background: var(--text-darkblack);
+    border-radius: 3px;
+  }
+}
+
+.sidebar-tags {
+  @include sidebar-card-title(var(--foreground-purple));
+
+  .tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    div {
+      margin: 0 .5rem .5rem 0;
+      padding: .5rem;
+      color: var(--text-darkblack);
+      border: 1px solid var(--font-lightgrey);
+      cursor: pointer;
+    }
+  }
+
+}
+
+/*blog主区*/
+.blog-content-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem !important;
+}
+
+.blog-content {
+  flex: 0.65;
+}
+
+.blog-sidebar {
+  flex: 0.32;
+}
+
+@mixin blogcard($color,$url) {
+  margin-bottom: 2rem;
+  border: 1px solid var(--font-lightgrey);
+  .avater {
+    position: relative;
+    height: 33vw;
+    min-height: 470px;
+    background: url($url);
+    background-size: cover;
+    .label {
+      position: absolute;
+      left: 0;
+      top: 2rem;
+      padding: .5rem;
+      font-size: 1.2rem;
+      color: var(--text-white);
+      background: $color;
+    }
+  }
+
+  .blog-card-text {
+    padding: 1rem;
+    h1 {
+      font-size: 1.5rem;
+      color: $color;
+    }
+    p{
+      margin-top: 1rem;
+      line-height: 1.5;
+      font-size: 1rem;
+    }
+    .blog-date {
+      margin-top: 1rem;
+
+      i {
+        color: $color;
+      }
+      span {
+
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.blog-tipscard {
+  @include blogcard(var(--foreground-green),"../img/blog1.jpg")
+}
+.blog-querycard {
+  @include blogcard(var(--foreground-deeppink),"../img/blog2.jpg")
+}
+.blog-generalcard {
+  @include blogcard(var(--foreground-purple),"../img/blog3.jpg")
+}
+
+.page-item {
+  display: inline-block;
+
+
+  a{
+    font-size: 1.2rem;
+    margin-right: .3rem;
+    color: var(--text-lightblack);
+    &.redpink {
+      color: var(--foreground-redpink);
+    }
+  }
+}
+
+
+/*facilities页 grid*/
+.avater-grid {
+  margin-top: 4rem !important;
+  display: grid;
+  grid-gap: 2rem;
+
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(3,170px);
+
+  >div {
+    display: flex;
+    padding: 1rem;
+    border: 1px solid var(--font-lightgrey);
+    border-radius: 3px;
+    .ab-img {
+      flex: 0.18;
+      height: 170px;
+      &.abi1 {
+        background: url("../img/png/facilities/one.png") no-repeat;
+      }
+      &.abi2 {
+        background: url("../img/png/facilities/two.png") no-repeat;
+      }
+      &.abi3 {
+        background: url("../img/png/facilities/three.png") no-repeat;
+      }
+      &.abi4 {
+        background: url("../img/png/facilities/four.png") no-repeat;
+      }
+      &.abi5 {
+        background: url("../img/png/facilities/five.png") no-repeat;
+      }
+      &.abi6 {
+        background: url("../img/png/facilities/six.png") no-repeat;
+      }
+
+    }
+    .ab-text {
+      flex: 0.82;
+      h1 {
+        font-size: 1.5rem;
+      }
+      p{
+        margin-top: 1rem;
+        line-height: 1.5;
+        font-size: 1rem;
+        color: var(--font-darkgrey);
+      }
+    }
+  }
+}
+
+/*faq主体*/
+.main-content {
+  margin-top: 4rem!important;
+  width: 50% !important;
+  min-width: 720px!important;
+  h2 {
+    font-size: 1.1rem;
+    color: var(--font-darkgrey);
+  }
+
+  .mctxt {
+    margin-top: 1rem;
+    &.mcone {
+      border: 1px solid var(--foreground-cyan);
+      p {
+        padding: 1rem;
+        line-height: 2;
+        color: var(--text-lightblack);
+      }
+    }
+    h1 {
+      font-size: 1.1rem;
+      padding: 1rem;
+      color: var(--text-white);
+      &.mcone {
+        background: var(--foreground-cyan);
+      }
+      &.mctwo {
+        background: var(--foreground-green);
+      }
+      &.mcthree {
+        background: var(--foreground-purple);
+      }
+      &.mcfour {
+        background: var(--foreground-orange);
+      }
+    }
+  }
+}
+
+
+/*gallery主区*/
+.gallery-wrap {
+  margin-top: 4rem!important;
+  h1 {
+    font-size: 1rem;
+  }
+}
+.gallery-grid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2,minmax(240px,18vw));
+  grid-gap: 1rem;
+  .gallery-card {
+    &:nth-child(1) {
+      border: 2px solid var(--foreground-orange);
+      background: url(../img/gallery/1.jpg);
+      background-size: cover;
+    }
+    &:nth-child(2) {
+      border: 2px solid var(--foreground-redpink);
+      background: url(../img/gallery/2.jpg);
+      background-size: cover;
+    }
+    &:nth-child(3) {
+      border: 2px solid var(--foreground-green);
+      background: url(../img/gallery/3.jpg);
+      background-size: cover;
+    }
+    &:nth-child(4) {
+      border: 2px solid var(--foreground-purple);
+      background: url(../img/gallery/4.jpg);
+      background-size: cover;
+    }
+    &:nth-child(5) {
+      border: 2px solid var(--foreground-cyan);
+      background: url(../img/gallery/5.jpg);
+      background-size: cover;
+    }
+    &:nth-child(6) {
+      border: 2px solid var(--foreground-deeppink);
+      background: url(../img/gallery/6.jpg);
+      background-size: cover;
     }
   }
 }
